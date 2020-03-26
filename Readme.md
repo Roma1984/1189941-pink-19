@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Тесловский](https://up.htmlacademy.ru/adaptive/19/user/1189941).
-* Наставник: `Анастасия Хмара`.
+* Наставник: [Анастасия Хмара](https://github.com/partizanka).
 
 ---
 
