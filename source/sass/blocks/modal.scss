@@ -1,0 +1,34 @@
+.modal {
+  width: 320px;
+  background-color: $colorBody;
+  padding-bottom: 30px;
+}
+.modal__title {
+  width: 280px;
+  color: black;
+   font-size: 14px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+}
+
+.modal__item {
+  padding-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+.modal__label {
+  font-size: 14px;
+  margin-left: 20px;
+  color: tomato;
+  text-transform: uppercase;
+}
+.modal__input {
+  margin-top: 20px;
+  height: 65px;
+  width: 220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}

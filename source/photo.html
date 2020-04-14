@@ -4,192 +4,195 @@
 <head>
   <meta charset="utf-8" />
   <title>Pink</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body-page">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logotype.png" width="75" height="22" alt="Pink">pink</a>
-
+    <div class="header__logo">
+      <a class="logo-link" href="index.html">
+      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="#">
+    </a>
+      <button class="header__btn" type="button">
+        <span class="visually-hidden">меню</span>
+      </button>
+    </div>
     <nav class="main-nav">
-      <button class="menu__button" type="button">меню</button>
+
       <ul class="main-nav__list">
-        <li class="site-list__item"><a href="index.html">главная</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">главная</a>
+       </li>
+        <li class="main-nav__item active">
+          <a class="main-nav__link" href="#">фотографии</a>
         </li>
-        <li class="site-list__item active">
-          <a href="#">фотографии</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">конкурс</a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html">конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
-
-      <div class="heading"></div>
-      <h1>фотографии
-        пользователей</h1>
     </nav>
   </header>
 
-  <section class="photo">
-    <div class="title__wrapper">
-      <h2 class="visually-hidden">опубликованные посты</h2>
-      <div class="title">
-        <p>Взгляните на фотографии, которые
-          выкладывают пользователи!
-          Видите, как не хватает ваших?</p>
+    <main class="page">
+      <section class="page-main">
+        <div class="page-main__screen">
+          <p class="page-main__title">Фотографии
+            пользователей</p>
+                 </div>
+      </section>
+
+    <section class="photo">
+               <p class="photo__title">Взгляните на фотографии, которые
+            выкладывают пользователи!
+            Видите, как не хватает ваших?
+          </p>
+      <figure class="photo__card">
+        <span class="photo__day">Панорама дня</span>
+        <img class="photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="#">
+
+
+        <figcaption class="photo__discription">
+          <b class="photo__author">Анна</b>
+          <span class="phono__time">(5 минут назад)</span>
+          <p class="photo__text">Прыгать или нет? Напишите в
+            комментарии свой совет и смотрите
+            прямую трансляцию в перископе,
+            задавайте свои вопросы!
+          </p>
+          <div class="photo__like">
+            <button class="photo__btn" type="button"></button>
+            <span class="photo__counter">нравится: 215</span>
+          </div>
+        </figcaption>
+      </figure>
+
+
+
+     <figure class="photo__card">
+        <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Levon">
+        <figcaption class="photo__discription">
+          <b class="photo__author">Левон</b>
+          <span class="phono__time">(5 часов назад)</span>
+          <p class="photo__text">Вчера он на луну летал, сегодня
+            в руки к нам попал.
+          </p>
+          <div class="photo__like">
+            <button class="photo__btn" type="button"></button>
+            <span class="photo__counter">нравится: 356</span>
+          </div>
+
+        </figcaption>
+      </figure>
+      <figure class="photo__card">
+        <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Anton">
+        <figcaption class="photo__discription">
+          <b class="photo__author">Антон</b>
+          <span class="phono__time">(12 часов назад)</span>
+          <p class="photo__text">Соседи будут рады!</p>
+          <div class="photo__like">
+            <button class="photo__btn" type="button"></button>
+            <span class="photo__counter">нравится: 666</span>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="photo__card">
+        <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Boris">
+        <figcaption class="photo__discription">
+          <b class="photo__author">Борис</b>
+          <span class="phono__time">(20 часов назад)</span>
+          <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="photo__like">
+            <button class="photo__btn" type="button"></button>
+            <span class="photo__counter">нравится: 215</span>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="photo__card">
+        <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Sergey">
+        <figcaption class="photo__discription">
+          <b class="photo__author">Сергей</b>
+          <span class="phono__time">(25 часов назад)</span>
+          <p class="photo__text">Самая кубанская в мире!</p>
+          <div class="photo__like">
+            <button class="photo__btn" type="button"></button>
+            <span class="photo__counter">нравится: 4</span>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="photo__card">
+        <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Maksim">
+        <figcaption class="photo__discription">
+          <b class="photo__author">Макси</b>
+          <span class="phono__time">(40 часов назад)</span>
+          <p class="photo__text">Где снег-то?</p>
+          <div class="photo__like">
+            <button class="photo__btn" type="button"></button>
+            <span class="photo__counter">нравится: 150</span>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="photo__card">
+        <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Nadya">
+        <figcaption class="photo__discription">
+          <b class="photo__author">Надежда</b>
+          <span class="phono__time">(45 часов назад)</span>
+          <p class="photo__text">Всем GM и взаимные лайки!</p>
+          <div class="photo__like">
+            <button class="photo__btn" type="button"></button>
+            <span class="photo__counter">нравится: 2560</span>
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="upload">
+             <p class="upload__discription">Затмите их всех!
+        выкладывайте все, что накопилось
+        в телефоне!
+      </p>
+
+         <img class="upload__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="#">
+
+        <div class="upload__seting" id="post">
+          <a class="upload__btn  upload__btn--crop" aria-label="Обрезка" title="Обрезка" href="#"></a>
+          <a class="upload__btn  upload__btn--fill" aria-label="Заливка" title="Заливка" href="#"></a>
+          <a class="upload__btn  upload__btn--brightnes" aria-label="Яркость" title="Яркость" href="#"></a>
+        </div>
+        <div class="upload__filter">
+        <div class="upload__range">
+        <div class="upload__scale">
+        <div class="upload__bar"></div>
+        </div>
+         <div class="upload__controls">
+          <button class="upload__btn upload__btn--ok" type="submit" aria-label="Запостить" title="Запостить">Запостить</button>
+          <button class="upload__btn upload__btn--no" type="reset" aria-label="Отмена" title="Отмена">Отмена</button>
+        </div>
       </div>
     </div>
-    <div class="photo__card">
-      <img src="img/panorama-mobile.jpg" width="320" height="137" alt="#">
-    </div>
-
-    <figure class="photo__card">
-      <figcaption class="photo__title">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Прыгать или нет? Напишите в
-          комментарии свой совет и смотрите
-          прямую трансляцию в перископе,
-          задавайте свои вопросы!</p>
-        <div class="heart">
-          <button class="heart__like" type="button">♡</button>
-          <span>нравится 215</span>
-        </div>
-      </figcaption>
-    </figure>
-
-    <figure class="photo__card">
-      <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="Levon">
-      <figcaption class="photo__title">
-        <b>Левон</b><span>(5 часов назад)</span>
-        <p>Вчера он на луну летал, сегодня
-          в руки к нам попал.</p>
-        <div class="heart">
-          <button class="heart__like" type="button">♡</button>
-          <span>нравится 356</span>
-        </div>
-      </figcaption>
-    </figure>
-
-    <figure class="photo__card">
-      <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="Anton">
-      <figcaption class="photo__title">
-        <b>Антон</b><span>(12 часов назад)</span>
-        <p>Соседи будут рады!</p>
-        <div class="heart">
-          <button class="heart__like" type="button">♡</button>
-          <span>нравится 666</span>
-        </div>
-      </figcaption>
-    </figure>
-
-    <figure class="photo__card">
-      <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="Boris">
-      <figcaption class="photo__title">
-        <b>Борис</b><span>(20 часов назад)</span>
-        <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <div class="heart">
-          <button class="heart__like" type="button">♡</button>
-          <span>нравится 215</span>
-        </div>
-      </figcaption>
-    </figure>
-
-    <figure class="photo__card">
-      <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="Sergey">
-      <figcaption class="photo__title">
-        <b>Сергей</b><span>(25 часов назад)</span>
-        <p>Самая кубанская в мире!</p>
-        <div class="heart">
-          <button class="heart__like" type="button">♡</button>
-          <span>нравится 4</span>
-        </div>
-      </figcaption>
-    </figure>
-
-    <figure class="photo__card">
-      <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="Maksim">
-      <figcaption class="photo__title">
-        <b>Макси</b> <span>(40 часов назад)</span>
-        <p>Где снег-то?!</p>
-        <div class="heart">
-          <button class="heart__like" type="button">♡</button>
-          <span>нравится 150</span>
-        </div>
-      </figcaption>
-    </figure>
-
-    <figure class="photo__card">
-      <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="Nadya">
-      <figcaption class="photo__title">
-        <b>Надежда</b> <span>(45 часов назад)</span>
-        <p>Всем GM и взаимные лайки!</p>
-        <div class="heart">
-          <button class="heart__like" type="button">♡</button>
-          <span>нравится 2560</span>
-        </div>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section class="upload>">
-    <h2 class="visually-hidden">настройки фото</h2>
-    <div class="upload__wrapper">
-      <p>затмите их всех!
-        выкладывайте все, что накопилось
-        в телефоне!</p>
-    </div>
-  </section>
-
-  <section class="seting">
-    <div class="photo__catalogo">
-      <img src="img/photo-7-mobile.jpg" width="280" height="374" alt="#">
-    </div>
-
-    <div class="settings__container">
-      <a class="partner-item academy" href="#">
-        <img src="img/crop.png" width="44" height="44" alt="#" /></a>
-    </div>
-
-    <div class="settings__container">
-      <a class="partner-item academy" href="#">
-        <img src="img/fill.png" width="48" height="43" alt="#" /></a>
-    </div>
-
-    <div class="settings__container">
-      <a class="partner-item academy" href="#">
-        <img src="img/contrast.png" width="32" height="32" alt="#" /></a>
-    </div>
-
-    <input type="range" min="0" max="100" step="1" value="50">
-
-    <div class="upload__btn">
-      <button class="btn__upload" type="button">Запостить</button>
-      <button class="btn__upload" type="button">Отмена</button>
-    </div>
-  </section>
-
+    </section>
+  </main>
 
   <footer class="footer">
-
-    <a class="logotip">
-      <img class="logotip__footer" src="img/logotype-blue-tablet.png" width="147" height="40" alt="#">pink</a>
-
+    <a class="footer__logotip">
+      <img class="footer__img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="#">
+    </a>
     <div class="socials">
-
-      <a class="socials-btn  twitter" aria-label="мы в twitter" href="#">мы в twitter</a>
-
-      <a class="socials-btn  facebook" aria-label="мы в twitter" href="#">мы facebook</a>
-
-      <a class="socials-btn  youTube" aria-label="мы в twitter" href="#">мы в youTube</a>
+      <a class="socials__link  socials__link--twitter" aria-label="мы в twitter" title="мы в twitter" href="#"></a>
+      <a class="socials__link  socials__link--facebook" aria-label="мы в twitter" title="мы facebook" href="#"></a>
+      <a class="socials__link  socials__link--youtube" aria-label="мы в youtube" title="мы в youtube" href="#"></a>
     </div>
 
-
-    <p class="copyright">Разработано:</p>
-    <a class="copyright__link" href="htpps://htmlacademy.ru">
-      <img src="img/htmlacademy.png" width="27" height="34" alt="#">HTMLAcadem</a>
+    <p class="copyright">Разработано:
+      <a class="copyright__link" target="_blank" aria-label="htmlacademy" title="htmlacademy"
+        href="https://htmlacademy.ru"></a>
+    </p>
   </footer>
 </body>
 </html>

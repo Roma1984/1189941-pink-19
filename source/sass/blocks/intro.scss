@@ -1,0 +1,13 @@
+ .intro   {
+  background-color: $colorHeader;
+  width: 320px;
+  }
+.intro__description {
+  p {
+    padding-top: 35px;
+    text-align: center;
+    width: 280px;
+    font-size: 14px;
+    padding-bottom: 30px
+  }
+}

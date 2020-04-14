@@ -1,0 +1,65 @@
+.panorama__img {
+
+}
+ .photo__title {
+  padding-top: 55px;
+  width: 280px;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 60px;
+ }
+.photo {
+  background-color: white;
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  }
+  .photo__day {
+    position: relative;
+    font-size: 12px;
+    color: $ColorFontWhite;
+   text-align: center;
+    content: "";
+    width: 140px;
+    height: 35px;
+   background-color: #d22856;
+   top: 840px;
+   left: 180px;
+   position: absolute;
+  }
+.photo__discription {
+  padding-top: 20px;
+  width: 280px;
+  background-color: $colorBodyT;
+}
+.photo__author {
+
+  margin-left: 20px;
+  font-size: 14px;
+}
+.phono__time {
+  margin-left: 5px;
+  color: #283645;
+}
+.photo__text {
+  margin-left: 20px;
+  width: 220px;
+}
+.photo__like {
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+.photo__btn {
+  border: none;
+  width: 13px;
+  height: 12px;
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.photo__counter {
+  color: $colorFontRed;
+  margin-left: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
