@@ -1,17 +1,13 @@
 .upload {
   width: 320px;
-}
+  }
 .upload__img {
   padding-bottom: 150px;
-}
-
-
-
+  }
 .upload__seting {
   text-align: center;
   padding-top: 35px;
  }
-
 .upload__btn {
   margin-right: 15px;
   margin-top: 30px;
@@ -24,15 +20,15 @@
   background-position: center;
   }
 .upload__btn--fill {
-background-image: url(../img/icon-editor-fill.svg);
-background-repeat: no-repeat;
-background-position: center;
-}
+  background-image: url(../img/icon-editor-fill.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
 .upload__btn--brightnes {
-background-image: url(../img/icon-editor-contrast.svg);
-background-repeat: no-repeat;
-background-position: center;
-}
+  background-image: url(../img/icon-editor-contrast.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
 
 
 
@@ -62,16 +58,7 @@ background-position: center;
 
 
 
-
-
-
-
-
-
-
-
 .upload__seting {
-
   margin-top: 25px;
   box-sizing: initial;
   padding-bottom: 55px;
@@ -87,7 +74,7 @@ background-position: center;
   width: 280px;
   height: 50px;
   border: 2px solid #d22856;
-  color: #d22856;
+  color: $colorFontRed;
   border-radius: 50px;
 }
 .upload__btn--no {
