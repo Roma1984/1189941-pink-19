@@ -1,0 +1,57 @@
+.travels {
+  width: 320px;
+  background-color: $colorBodyT;
+}
+.travels__title {
+  padding-top: 40px;
+  font-size: 14px;
+  width: 185px;
+  text-align: center;
+  color: $colorFontRed;
+  text-transform: uppercase;
+}
+.travels__list {
+  margin-top: 41px;
+  padding-left: 20px;
+  list-style: none;
+  }
+  .travels__label {
+    font-size: 18px;
+  position: relative;
+
+  line-height: 20px;
+  display: block;
+  cursor: pointer;
+  color: #283136;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  }
+  .travels__label:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/Shape7.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  }
+  .travels__label:hover::before{
+  opacity: 1;
+  }
+  .travels__label:focus::before,
+  .travels__label:active::before {
+  opacity: 1;
+  }
+   input[type="radio"]:checked + label::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: 0;
+    position: absolute;
+    background-image: url("../img/Shape.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    }

@@ -4,184 +4,182 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body-page">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logotype.png" width="75" height="22" alt="Pink">pink</a>
-
+    <div class="header__logo">
+      <a class="logo-link" href="index.html">
+        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="#">
+      </a>
+      <button class="header__btn" type="button">
+        <span class="visually-hidden">меню</span>
+      </button>
+    </div>
     <nav class="main-nav">
-      <button class="menu__button" type="button">меню</button>
+
       <ul class="main-nav__list">
-        <li class="site-list__item"> <a href="index.html">главная</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="photo.html">фотографии</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">фотографии</a>
         </li>
-        <li class="site-list__item active">
-          <a href="#">конкурс</a>
+        <li class="main-nav__item active">
+          <a class="main-nav__link" href="#">конкурс</a>
         </li>
-        <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
-
-      <div class="heading"></div>
-      <h1>Конкурс на самое
-        безбашенное путешествие
-        с Пинк</h1>
     </nav>
+
   </header>
 
+  <main class="page">
+    <section class="page-main">
+      <div class="page-main__screen">
+        <p class="page-main__title">Конкурс на самое
+          безбашенное путешествие
+          с Пинк</p>
+      </div>
+    </section>
 
-  <section class="form">
-    <div class="form__tinle">
-      <p>Поделитесь своей историей и получите шанс
-        выиграть ценный приз — 1000 миль на вашу
-        бонусную карту!</p>
-    </div>
+    <section class="page__form">
+      <form class="form">
+        <fieldset class="modal">
+          <legend class="modal__title">Поделитесь своей историей и получите шанс
+            выиграть ценный приз — 1000 миль на вашу
+            бонусную карту!</legend>
+          <div class="modal__item">
+            <label class="modal__label" for="user-sursname">фамилия:</label>
+            <input class="modal__input" type="text" id="user-sursname" name="sursname" placeholder="Укажите фамилию *"
+              required>
+          </div>
+          <div class="modal__item">
+            <label class="modal__label" for="name">имя:</label>
+            <input class="modal__input" type="text" id="name" name="name" placeholder="Ведите ваше имя *" required>
+          </div>
+          <div class="modal__item">
+            <label class="modal__label" for="patronymic">отчество:</label>
+            <input class="modal__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
 
-    <form>
-      <fieldset>
-        <legend class="modal"></legend>
-        <div class="modal__form">
+        <fieldset class="filter">
+          <legend class="filter__title">Ваши безбашенные
+            достижения в путешествии
+          </legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <input class="visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
+              <label class="filter__label" for="selfi">Сделал селфи с акулой</label>
+            </li>
+            <li class="filter__item">
+              <input class="visually-hidden" type="checkbox" name="beach" id="beach" checked>
+              <label class="filter__label" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="filter__item">
+              <input class="visually-hidden" type="checkbox" name="noris" id="noris">
+              <label class="filter__label" for="noris">Видел Чака Норриса</label>
+            </li>
+            <li class="filter__item">
+              <input class="visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+              <label class="filter__label" for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="filter__item">
+              <input class="visually-hidden" type="checkbox" name="tower" id="tower" checked>
+              <label class="filter__label" for="tower">Удержал башню</label>
+            </li>
+            <li class="filter__item">
+              <input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
+              <label class="filter__label" for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="communication">
 
-          <label class="modal__form__label" for="user-sursname">фамилия</label>
-          <input class="modal__form__input" type="text" id="user-sursname" name="sursname" placeholder="укажите фамилию"
-            required>
-        </div>
-        <div class="modal__form">
-          <label class="modal__form__label" for="name">имя</label>
-          <input class="modal__form__input" type="text" id="name" name="name" placeholder="ведите ваше имя" required>
-        </div>
-        <div class="modal__form">
-          <label class="modal__form__label" for="patronymic">отчество</label>
-          <input class="modal__form__input" type="text" id="patronymic" name="patronymic"
-            placeholder="ну и отчество тоже">
-        </div>
-      </fieldset>
+          <div class="communication__item">
+            <label class="communication__label" for="user__phone">Номер телефона</label>
+            <input class="communication__input" type="tel" id="user__phone" name="phone"
+              placeholder="Номер, пожалуйста">
+          </div>
+          <div class="communication__item">
+            <label class="communication__label" for="user__email">Адрес почты</label>
+            <input class="communication__input" type="email" id="user__email" name="email" placeholder="Ведите почту*">
+          </div>
+        </fieldset>
+        <fieldset class="travels">
+          <legend class="travels__title">С каким приложением
+            путешествовали?
+          </legend>
+          <ul class="travels__list">
+            <li class="travels__item">
+              <input class="visually-hidden" type="radio" name="travels__item" id="ios" value="ios" checked>
+              <label class="travels__label" for="ios">pink для ios</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="travels__item" id="android" value="android">
+              <label class="travels__label" for="android">pink на android</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="travels__item" id="windows" value="windows">
+              <label class="travels__label" for="windows">windows phone</label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset>
-        <legend class="features-title">Ваши безбашенные
-          достижения в путешествии</legend>
-        <ul class="features__list">
-          <li>
-            <input class="visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
-            <label class="features__label features__label__checkbox" for="selfi">Сделал селфи с акулой</label>
-          </li>
+        <fieldset class="personal">
+          <legend class="personal__title">Опишите свои эмоции</legend>
+          <div class="personal__item">
+            <label class="personal__label" for="user__text"></label>
+            <textarea class="personal__input" name="content" id="user__text"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <button class="personal__btn" type="submit">отправить форму</button>
 
-          <li>
-            <input class="visually-hidden" type="checkbox" name="beach" id="beach" checked>
-            <label class="features__label features__label__checkbox" for="beach">Обгорел на пляже</label>
-          </li>
-
-          <li>
-            <input class="visually-hidden" type="checkbox" name="noris" id="noris">
-            <label class="features__label features__label__checkbox" for="noris">Видел Чака Норриса</label>
-          </li>
-
-          <li>
-            <input class="visually-hidden" type="checkbox" name="souvenir" id="souvenir">
-            <label class="features__label features__label__checkbox" for="souvenir">Накупил сувениров</label>
-          </li>
-
-          <li>
-            <input class="visually-hidden" type="checkbox" name="tower" id="tower" checked>
-            <label class="features__label features-label__checkbox" for="tower">Удержал башню</label>
-          </li>
-
-          <li>
-            <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
-            <label class="features__label features-label__checkbox" for="hotel">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset>
-        <legend class="communication"> </legend>
-        <div class="communication__modal">
-          <label class="visually-hidden" for="user__phone">номер телефона</label>
-          <input class="communication__modal__input" type="tel" id="user__phone" name="phone"
-            placeholder="Номер, пожалуйста">
-        </div>
-        <div class="communication__modal">
-          <label class="visually-hidden" for="user__email">адрес почты</label>
-          <input class="communication__modal__input" type="email" id="user__email" name="email"
-            placeholder="Ведите почту*">
-        </div>
-      </fieldset>
-
-
-      <fieldset>
-        <legend class="travels">С каким приложением
-          путешествовали?</legend>
-        <ul class="travels__list">
-          <li>
-            <input class="visually-hidden" type="radio" name="travels__item" id="ios" value="ios" checked>
-            <label class="travels__label travels__label__radio" for="ios">pink для ios</label>
-          </li>
-
-          <li>
-            <input class="visually-hidden" type="radio" name="travels__item" id="android" value="android">
-            <label class="travels__label travels__label__radio" for="android">pink на android</label>
-          </li>
-
-          <li>
-            <input class="visually-hidden" type="radio" name="travels__item" id="windows" value="windows">
-            <label class="travels__label travels__label__radio" for="windows">windows phone</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset>
-        <legend class="personal"></legend>
-        <div class="personal__data">
-          <label class="personal__data__label" for="user__text">Опишите свои эмоции</label>
-          <textarea class="personal__data__input" name="content" id="user__text"
-            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          <button class="popup-btn" type="submit">отправить форму</button>
-        </div>
-        <div class="text"></div>
-        <sup>*</sup> — обязательные поля с Пинк
-      </fieldset>
-    </form>
-  </section>
+            <span class="personal__text">
+              <sup>*</sup> — обязательные поля
+            </span>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 
   <footer class="footer">
-
-    <a class="logotip">
-      <img class="logotip__footer" src="img/logotype-blue-tablet.png" width="147" height="40" alt="#">pink</a>
-
+    <a class="footer__logotip">
+      <img class="footer__img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="#">
+    </a>
     <div class="socials">
-
-      <a class="socials-btn  twitter" aria-label="мы в twitter" href="#">мы в twitter</a>
-
-      <a class="socials-btn  facebook" aria-label="мы в twitter" href="#">мы facebook</a>
-
-      <a class="socials-btn  youTube" aria-label="мы в twitter" href="#">мы в youTube</a>
+      <a class="socials__link  socials__link--twitter" aria-label="мы в twitter" title="мы в twitter" href="#"></a>
+      <a class="socials__link  socials__link--facebook" aria-label="мы в twitter" title="мы facebook" href="#"></a>
+      <a class="socials__link  socials__link--youtube" aria-label="мы в youtube" title="мы в youtube" href="#"></a>
     </div>
 
-
-    <p class="copyright">Разработано:</p>
-    <a class="copyright__link" href="htpps://htmlacademy.ru">
-      <img src="img/htmlacademy.png" width="27" height="34" alt="#">HTMLAcadem</a>
+    <p class="copyright">Разработано:
+      <a class="copyright__link" target="_blank" aria-label="htmlacademy" title="htmlacademy"
+        href="https://htmlacademy.ru"></a>
+    </p>
   </footer>
 
-  <section class="modal__error">
-    <h2 class="modal__title">Что-то пошло не так! </h2>
-    <p>Проверьте поля, выделенные красным,
-      скорее всего вы забыли их заполнить</p>
-    <button class="error__btn btn" type="button" aria-label="ok">ok</button>
+  <section class="modal-popup">
+    <h2 class="modal-popup__title">Что-то пошло не так!</h2>
+    <p class="modal-popup__text">Проверьте поля, выделенные красным,
+      скорее всего вы забыли их заполнить
+    </p>
+    <button class="modal-popup__btn" type="button" aria-label="ok">ok</button>
   </section>
 
-  <section class="modal__sent">
-    <h2 class="modal__title">Ваша заявка отправлена</h2>
-    <p>Спасибо за ваше участие,
+  <section class="modal-popup">
+    <h2 class="modal-popup__title">Ваша заявка отправлена</h2>
+    <p class="modal-popup__text">Спасибо за ваше участие,
       ваша заявка уже поступила к нам. В ближайшее время мы
       рассмотрим ее
-      и оповестим вас.</p>
-    <button class="sent__btn btn" type="button" aria-label="закрыть окно">закрыть окно</button>
+      и оповестим вас.
+    </p>
+    <button class="modal-popup__btn" type="button" aria-label="закрыть окно">закрыть окно</button>
   </section>
 </body>
+
 </html>
