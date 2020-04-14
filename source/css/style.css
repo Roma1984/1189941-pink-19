@@ -30,7 +30,6 @@
 
 .main-nav__item {
   text-align: center;
-  display: none;
   width: 320px;
   height: 70px;
   background-color: #283645;
@@ -47,6 +46,10 @@
 
 .page {
   margin-top: -21px; }
+
+fieldset {
+  padding: 0;
+  border: none; }
 
 .page-main__screen {
   background: url(../img/bg-back-mobile@1x.jpg);
