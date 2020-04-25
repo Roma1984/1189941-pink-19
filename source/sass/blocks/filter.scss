@@ -1,68 +1,90 @@
 .filter {
-  width: 320px;
+  min-width: 320px;
   background-color: $colorBodyT;
-}
-.filter__title {
-  width: 280px;
-text-align: center;
-text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet-width) {
+      background-color: $colorBody;
+      margin-bottom: 70px;
     }
+  }
+.filter__title {
+  margin-left: 50px;
+  font-size: 14px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: $colorFontRed;
+  width: 230px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+         width: 400px;
+      padding:   0;
+    }
+  }
 .filter__item {
   padding-bottom: 70px;
-}
+  }
 
 .filter__list {
-  padding-left: 20px;
-  margin-top: 45px
+  width: 280px;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 100px;
 
-}
+  @media (min-width: $tablet-width) {
+      margin: 60px;
+    }
+      }
+
 .filter__label {
-position: relative;
-font-size: 18px;
-line-height: 20px;
-display: block;
-cursor: pointer;
-color: #283136;
-margin-bottom: 20px;
-padding-left: 37px;
-}
+  position: relative;
+  font-size: 18px;
+  line-height: 20px;
+  display: block;
+  cursor: pointer;
+  color: #283136;
+  padding-left: 60px;
+  padding-top: 10px;
+  }
 .filter__label::before {
 content: "";
-width: 39px;
-height: 39px;
-top: 0;
-left: 0;
-position: absolute;
-background-image: url("../img/Layer164.png");
-background-repeat: no-repeat;
-background-color: transparent;
-}
+  width: 39px;
+  height: 39px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/Layer164.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  }
+.filter__label::before {
+  opacity: 1;
+  }
 .filter__label::before {
 opacity: 1;
-}
-.filter__label::before {
-opacity: 1;
-}
+  }
 input[type="checkbox"]:checked + label::before {
 content: "";
-width: 39px;
-height: 39px;
-top: 0;
-left: 0;
-position: absolute;
-background-image: url("../img/on.png");
-background-repeat: no-repeat;
-background-color: transparent;
-}
-
+  width: 39px;
+  height: 39px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/on.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  }
 .filter__list li {
-position: relative;
-font-size: 16px;
-line-height: 20px;
-display: block;
-cursor: pointer;
-color: #283136;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  cursor: pointer;
+  color: #283136;
 }
 input:focus + label::before {
-opacity: 1;
-}
+  opacity: 1;
+  }

@@ -1,10 +1,24 @@
-
 .communication {
-  width: 320px;
-  padding-top: 10px;
-  margin-bottom: 25px;
-  margin-left: 20px;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
   background-color: $colorBody;
+  padding-top: 10px;
+  padding-bottom: 40px;
+@media (min-width: $tablet-width) {
+  min-width: 620px;
+  margin-bottom: 70px;
+  }
+}
+.communication__title {
+  opacity: 0;
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+  font-size: 14px;
+  text-align: center;
+  color: $colorFontRed;
+  text-transform: uppercase;
+}
 }
 .communication__label {
   font-size: 14px;
@@ -15,14 +29,29 @@
 .communication__input {
   margin-top: 20px;
   height: 65px;
-  width: 220px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+@media (min-width: $tablet-width) {
+  width: 440px;
+  }
+}
+.communication__input::before {
+  width: 65px;
+  height: 65px;
+  background-color: red;
+@media (min-width: $tablet-width) {
+  background-color: $colorBodyT;
+  width: 60px;
+  height: 60px;
+  }
 }
 .communication__item {
-  padding-top: 10px;
-  margin-bottom: 25px;
-  margin-left: 20px
-
+  padding-top: 40px;
+  margin-left: 20px;
+@media (min-width: $tablet-width) {
+  width: 440px;
+  }
 }

@@ -3,22 +3,29 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
 
+
+
+</head>
 <body class="body-page">
   <header class="header">
     <div class="header__logo">
-      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="#">
-      <button class="header__btn" type="button">
-        <span class="visually-hidden">меню</span>
+     <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="#">
+     <button class="header__toggle header__toggle-burger" type="button" title="Открыть меню">
+      <span class="visually-hidden">Отрыть меню</span>
       </button>
     </div>
-    <nav class="main-nav">
 
-      <ul class="main-nav__list">
-        <li class="main-nav__item active">
+    <nav class="main-nav main-nav--closed main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button" title="Открыть меню">
+        <span class="visually-hidden">Отрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__item main-nav__item--active">
           <a class="main-nav__link" href="#">главная</a>
         </li>
         <li class="main-nav__item">
@@ -31,19 +38,37 @@
           <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
+    </div>
     </nav>
   </header>
+
+  <div class="block-mock"></div>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
   <main class="page">
     <section class="page-main">
       <div class="page-main__screen">
+      <div class="page-main__img" >
         <p class="page-main__title">Взгляните на жизнь иначе!</p>
-        <img class="page-main__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="рука с телефоном">
       </div>
+    </div>
     </section>
     <section class="download">
 
-      <a class="download__btn" href="#">скачать приложение</a>
+      <button class="download__btn" title="скачать приложени">скачать приложение</button>
 
       <ul class="download__list">
         <li class="download__item">
@@ -67,13 +92,13 @@
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
     </section>
-    
+
     <section class="information">
       <div class="information__wrapper">
         <p class="information__info">Устали от серости
           мегополиса?</p>
         <p class="information__info">Нам есть что вам
-          предложить!</p>
+         <br> предложить!</p>
       </div>
     </section>
     <section class="advantage">
@@ -82,16 +107,16 @@
           <h3 class="advantage__title">Поднимает настроение</h3>
           <p class="advantage__description">
             Приложение позволит вам победить
-            осеннюю хандру и депрессию буквально в
-            несколько кликов!
+            осеннюю хандру и депрессию
+            буквально в несколько кликов!
           </p>
         </li>
         <li class="advantage__item">
           <h3 class="advantage__title">Меняет мир вокруг</h3>
           <p class="advantage__description">
-            Сделайте снимок и украсьте его смайликом
-            или текстовой подписью, чтобы усилить
-            эффект
+            Сделайте снимок и украсьте его
+            смайликом или текстовой подписью,
+            чтобы усилить эффект
           </p>
         </li>
         <li class="advantage__item">
@@ -144,9 +169,12 @@
           </cite>
         </blockquote>
         <div class="reivew__toggle">
-          <button class="reivew__btn" type="button">1</button>
-          <button class="reivew__btn" type="button">2</button>
-          <button class="reivew__btn" type="button">3</button>
+          <button class="reivew__btn" type="button">
+            <span class="visually-hidden"></span>1</button>
+          <button class="reivew__btn" type="button">
+            <span class="visually-hidden"></span>2</button>
+          <button class="reivew__btn" type="button">
+            <span class="visually-hidden"></span>3</button>
         </div>
       </div>
 
@@ -156,26 +184,37 @@
         <table class="price__table">
           <tr>
             <th class="price__plan">база
-              <span>1.99 USD</span>
+              <br><span>1.99 USD</span>
+            </th>
+
+            <th class="price__plan">база
+              <br><span>1.99 USD</span>
             </th>
             <th class="price__plan">стандарт
-              <span>3.99 USD</span>
+              <br><span>3.99 USD</span>
             </th>
             <th class="price__plan">анлим
-              <span>9.99 USD</span>
+              <br><span>9.99 USD</span>
             </th>
           </tr>
           <tr>
+            <td class="price__component">розовый фильтр</td>
+
             <td class="price__component">розовый фильтр</td>
             <td class="price__component"> розовый фильтр</td>
             <td class="price__component"> розовый фильтр</td>
           </tr>
           <tr>
+
+            <td class="price__component">смайлики</td>
+
             <td class="price__component">смайлики</td>
             <td class="price__component">смайлики</td>
             <td class="price__component">смайлики</td>
           </tr>
           <tr>
+            <td class="price__component">комментарии</td>
+
             <td class="price__component">комментарии</td>
             <td class="price__component">комментарии</td>
             <td class="price__component">комментарии</td>
@@ -193,13 +232,13 @@
   <footer class="сontacts">
     <section class="сontacts__footer">
       <div class="сontacts__wrapper">
-        <h3 class="сontacts__title">Остались вопросы?
-          свяжитесь с нами!</h3>
-        <p class="contacts__text">Звоните:</p>
+        <p class="сontacts__title">Остались вопросы?
+          Свяжитесь с нами!</p>
+        <h3 class="contacts__text">Звоните:</h3>
         <p class="contacts__tel"><a href="tel:+78125556666">+7(812) 555-66-66</a></p>
-        <p class="contacts__text">Пишите:</p>
-        <a class="сontacts__email" href="#">mail@htmlacademy.ru</a>
-        <p class="contacts__text">Приезжайте в гости:</p>
+        <h3 class="contacts__text">Пишите:</h3>
+        <p class="сontacts__email"><a href="#">mail@htmlacademy.ru</a></p>
+        <h3 class="contacts__text">Приезжайте в гости:</h3>
         <p class="contacts__adress"> ул. Большая Конюшенная, 19/8</p>
       </div>
     </section>
@@ -208,6 +247,26 @@
         <p><img class="map__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="#"></p>
       </div>
     </section>
+
+
+
+    <section class="footer__logotip">
+      <img class="footer__img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="#">
+
+    <div class="socials">
+      <a class="socials__link  socials__link--twitter" aria-label="мы в twitter" title="мы в twitter" href="#"></a>
+      <a class="socials__link  socials__link--facebook" aria-label="мы в twitter" title="мы facebook" href="#"></a>
+      <a class="socials__link  socials__link--youtube" aria-label="мы в youtube" title="мы в youtube" href="#"></a>
+    </div>
+
+    <p class="copyright">Разработано:
+      <a class="copyright__link" target="_blank" aria-label="htmlacademy" title="htmlacademy"
+        href="https://htmlacademy.ru"></a>
+    </p>
+</section>
+
+
+
   </footer>
 </body>
 

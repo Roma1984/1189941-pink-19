@@ -1,10 +1,8 @@
 .advantage {
-
   background-color: $colorBodyT;
-  width: 320px;
-
+  min-width: 320px;
+  padding-top: 50px;
 }
-
 .advantage__title {
   font-size: 18px;
   font-weight: 600;
@@ -12,11 +10,34 @@
 }
 .advantage__description {
   font-weight: 400;
-  font-size: 18px;
-width: 240px;
- text-align: center;
+  font-size: 14px;
+ min-width: 265px;
+  text-align: center;
 }
 .advantage__item {
-  padding-top: 40px;
+  padding-bottom: 30px;
   list-style: none;
+}
+ .screen-phone {
+  margin-left: 80px;
+
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    min-width: 768px;
+  }
+
+.advantage__item {
+  width: 310px;
+}
+.advantage__title {
+  text-align: left;
+}
+.advantage__description {
+  width: 310px;
+  text-align: left;
+}
 }

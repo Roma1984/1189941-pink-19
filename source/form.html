@@ -3,55 +3,75 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body-page">
+
   <header class="header">
     <div class="header__logo">
       <a class="logo-link" href="index.html">
         <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="#">
       </a>
-      <button class="header__btn" type="button">
-        <span class="visually-hidden">меню</span>
-      </button>
     </div>
-    <nav class="main-nav">
 
-      <ul class="main-nav__list">
+    <nav class="main-nav main-nav--closed main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button" title="Открыть меню">
+        <span class="visually-hidden">Отрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="photo.html">фотографии</a>
         </li>
-        <li class="main-nav__item active">
+        <li class="main-nav__item main-nav__item--active">
           <a class="main-nav__link" href="#">конкурс</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
+        </div>
     </nav>
-
   </header>
-
+  <div class="block-mock"></div>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   <main class="page">
     <section class="page-main">
       <div class="page-main__screen">
-        <p class="page-main__title">Конкурс на самое
-          безбашенное путешествие
-          с Пинк</p>
+        <p class="page-main__heading">Конкурс на самое
+          безбашенное
+          путешествие с Пинк
+        </p>
       </div>
     </section>
 
     <section class="page__form">
       <form class="form">
         <fieldset class="modal">
-          <legend class="modal__title">Поделитесь своей историей и получите шанс
-            выиграть ценный приз — 1000 миль на вашу
-            бонусную карту!</legend>
+          <legend class="modal__title">Поделитесь своей историей и получите
+            шанс выиграть ценный приз — 1000
+            миль на вашубонусную карту!
+          </legend>
+
           <div class="modal__item">
             <label class="modal__label" for="user-sursname">фамилия:</label>
             <input class="modal__input" type="text" id="user-sursname" name="sursname" placeholder="Укажите фамилию *"
@@ -98,8 +118,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="communication">
 
+        <fieldset class="communication">
+          <legend class="communication__title">Контактная информация</legend>
           <div class="communication__item">
             <label class="communication__label" for="user__phone">Номер телефона</label>
             <input class="communication__input" type="tel" id="user__phone" name="phone"
@@ -136,13 +157,15 @@
             <label class="personal__label" for="user__text"></label>
             <textarea class="personal__input" name="content" id="user__text"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            <button class="personal__btn" type="submit">отправить форму</button>
+
+
+          </div>
+        </fieldset>
+        <button class="personal__btn" type="submit">отправить форму</button>
 
             <span class="personal__text">
               <sup>*</sup> — обязательные поля
             </span>
-          </div>
-        </fieldset>
       </form>
     </section>
   </main>

@@ -1,0 +1,40 @@
+.site-list {
+  font-weight: bold;
+   width: 100%;
+}
+.site-list a {
+
+  text-align: center;
+  display: block;
+  padding: 25px 21px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $colorHeader;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #010101 ;
+}
+.site-list a[href]:hover {
+  background-color: #755a46;
+  border-top-color: #755a46;
+}
+.site-list a[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #6a4d38;
+  border-top-color: #6a4d38;
+}
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 570px;
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 780px;
+  }
+}

@@ -1,6 +1,78 @@
 .reivew {
+  padding: 0;
+  margin: 0 auto;
   background-color: $colorBody;
-  width: 320px;
-  margin-top: -58px;
+  min-width: 320px;
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+.reivew__description {
+  text-align: center;
+}
+.reivew__title {
+  text-align: center;
+  font-size: 14px;
+  min-width: 280px;
+}
+.reivew__item {
+  margin-left: 20px;
+  text-align: center;
+}
+.reivew__toggle {
+
+}
+.reivew__btn {
+  border: none;
+}
+
+
+
+.reivew__toggle {
+  box-sizing: initial;
+  position: absolute;
+  left: 50%;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  transform: translateX(-50%);
+  }
+  .reivew__toggle button {
+  position: relative;
+  display: inline-block;
+
+  width: 13px;
+  height: 13px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: $colorBodyT;
+  cursor: pointer;
+  }
+  .reivew__toggle button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  }
+
+
+
+
+
+@media (min-width: $tablet-width) {
+  .reivew {
+    min-width: 768px;
+  }
+  .reivew__title {
+    font-size: 20px;
+  }
+  .reivew__description {
+    width: 620px;
+font-size: 18px;
+  }
 }

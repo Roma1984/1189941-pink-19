@@ -1,4 +1,53 @@
 .price {
   background-color: $colorBody;
+  padding-top: 40px;
   padding-bottom: 40px;
+  min-width: 320px;
+}
+.price__table {
+  padding: 0;
+  margin: 0 auto;
+}
+.price__plan {
+  width: 280px;
+  height: 100px;
+  color: $ColorFontWhite;
+  background-color: $colorHeader;
+  text-transform: uppercase;
+}
+.price__btn {
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    min-width: 768px;
+  }
+  .price__table {
+    min-width: 620px;
+    border-collapse: collapse;
+  }
+  .price__plan {
+    font-size: 18px;
+    width: 155px;
+    height: 80px;
+  }
+  .price__plan:first-child {
+    display: block;
+     opacity: 0;
+  }
+  .span {
+    width: 70px;
+  }
+  .price__component {
+    font-size: 14px;
+    text-align: center;
+    width: 155px;
+    height: 50px;
+    background-color: $colorBody;
+    border: solid 3px #eeeeee;
+  }
+  .price__taggle {
+    display: none;
+  }
 }

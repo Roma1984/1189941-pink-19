@@ -1,32 +1,48 @@
 .travels {
-  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
   background-color: $colorBodyT;
+@media (min-width: $tablet-width) {
+  background-color: $colorBody;
+  margin-bottom: 70px;
+  }
 }
 .travels__title {
+
   padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 14px;
-  width: 185px;
   text-align: center;
   color: $colorFontRed;
   text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  width: 380px;
+  padding: 0;
+    }
 }
 .travels__list {
-  margin-top: 41px;
-  padding-left: 20px;
+  padding: 0;
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 130px;
+  padding-bottom: 40px;
   list-style: none;
+@media (min-width: $tablet-width) {
+  margin: 60px;
   }
-  .travels__label {
-    font-size: 18px;
+}
+.travels__label {
+  font-size: 18px;
   position: relative;
-
   line-height: 20px;
   display: block;
   cursor: pointer;
   color: #283136;
   padding-bottom: 25px;
   padding-left: 60px;
-  }
-  .travels__label:before {
+}
+.travels__label:before {
   content: "";
   width: 40px;
   height: 40px;
@@ -36,22 +52,22 @@
   background-image: url("../img/Shape7.png");
   background-repeat: no-repeat;
   background-color: transparent;
-  }
-  .travels__label:hover::before{
+}
+.travels__label:hover::before{
   opacity: 1;
   }
-  .travels__label:focus::before,
-  .travels__label:active::before {
+.travels__label:focus::before,
+.travels__label:active::before {
   opacity: 1;
-  }
-   input[type="radio"]:checked + label::before {
-    content: "";
-    width: 40px;
-    height: 40px;
-    top: -5px;
-    left: 0;
-    position: absolute;
-    background-image: url("../img/Shape.png");
-    background-repeat: no-repeat;
-    background-color: transparent;
-    }
+}
+input[type="radio"]:checked + label::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/Shape.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+}

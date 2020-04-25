@@ -1,0 +1,18 @@
+.form {
+  margin: 0 auto;
+  width: 320px;
+@media (min-width: $tablet-width) {
+  width: 620px;
+  }
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+@media (min-width: $tablet-width) {
+  width: 620px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+
+  }
+}

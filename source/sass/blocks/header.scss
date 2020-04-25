@@ -1,29 +1,37 @@
-.header__logo {
-
+.header {
   background-color: $colorHeader;
-  width: 320px;
-  height: 70px;
-  .header__logo-image {
-margin-left: 20px;
- margin-top: 20px;
+  display: flex;
+  flex-direction: column;
   }
-  .header__btn {
-
+.header__logo {
+   width: 320px;
+   height: 70px;
+  }
+.header__logo-image {
+  margin-left: 20px;
+  margin-top: 30px;
+  }
+  .header__toggle {
+    text-decoration: none;
+    border: none;
+    width: 24px;
+    height: 23px;
+    top: 30px;
+    left: 900px;
+    position: absolute;
+    background-image: url("../img/icon-menu-burger.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+.header__toggle .main-nav--closed  {
+  text-decoration: none;
   border: none;
-  content: "";
   width: 24px;
   height: 23px;
   top: 30px;
-  left: 280px;
+  left: 900px;
   position: absolute;
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-color: transparent;
 }
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-  }

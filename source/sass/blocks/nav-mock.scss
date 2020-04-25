@@ -1,0 +1,8 @@
+.nav-mock {
+  min-height: 310px;
+}
+@media (min-width: $tablet-width) {
+  .nav-mock {
+    min-height: 72px;
+  }
+}

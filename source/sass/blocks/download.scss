@@ -1,39 +1,40 @@
 .download   {
   background-color: $colorHeader;
-  width: 320px;
+  min-width: 320px;
   padding-top: 30px;
   margin-top: -5px;
 
 }
 .download__btn {
-width: 280px;
-height: 50px;
- margin-left: 20px;
+  min-width: 280px;
+  min-height: 50px;
+  background-color: $colorHeader;
   border: 2px solid $colorBody;
   border-radius: 50px;
   color: $ColorFontWhite;
   font-size: 18px;
   text-decoration: none;
+margin: 0 auto;
+display: block;
 }
 .download__list {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
+  list-style: none;
+  margin: 0 auto;
+   width: 280px;
 }
 .download__item {
   padding-right: 20px;
   padding-left: 20px;
-    }
+  display: block;
+}
 .download__description {
   color: $ColorFontWhite;
   padding-bottom: 40px;
   width: 280px;
   font-size: 14px;
   text-align: center;
-  margin-left: 20px;
-
-}
-.page-main__title {
-  font-size: 24px;
-  font-weight: 400;
+margin: 0 auto;
 }

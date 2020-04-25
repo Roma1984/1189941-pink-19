@@ -1,66 +1,71 @@
 .footer {
+  padding: 0;
+  margin: 0 auto;
   background-color: $colorBody;
-  width: 320px;
-  height: 300px;
-  padding-top: 35px; }
-  .footer__img {
-    margin-left: 85px;
-
+  min-width: 320px;
+  padding-top: 35px;
+@media (min-width: $tablet-width) {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
   }
+}
+.footer__logotip {
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
 
 .socials {
-    text-align: center;
-    display: flex;
-    padding-top: 35px;
-    margin-left: 70px;
-
-  }
-  .socials__link {
+  transform: translate(20%, 25%);
+  padding-bottom: 40px;
+  text-align: center;
+  display: flex;
+  padding-top: 35px;
+  margin: 0 auto;
+  padding: 0;
+}
+.socials__link {
   margin-right: 15px;
   margin-top: 30px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 3px solid #e1e1e1;
-
-  }
+}
 .socials__link:active {
-  background-color: #fb565a;
+  background-color: $colorFontRed;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-  }
-  .socials__link--twitter {
-    background-image: url(../img/icon-twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
-    }
+}
+.socials__link--twitter {
+  background-image: url(../img/icon-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
   .socials__link--facebook {
   background-image: url(../img/icon-facebook.svg);
   background-repeat: no-repeat;
   background-position: center;
-
-  }
-
-  .socials__link--youtube {
+}
+.socials__link--youtube {
   background-image: url(../img/icon-youtube.svg);
   background-repeat: no-repeat;
   background-position: center;
-  }
+}
+.copyright {
+  position: absolute;
+  transform: translate(50%, 0);
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  padding-top: 35px;
+}
 
-
-
-  .copyright {
-    text-align: center;
-    display: flex;
-    padding-top: 35px;
-    margin-left: 70px;
-  }
-
-  .copyright__link {
-    margin-left: 25px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-color: transparent;
-  }
+.copyright__link {
+  margin-left: 25px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
