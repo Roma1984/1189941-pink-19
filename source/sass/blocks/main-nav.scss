@@ -1,16 +1,12 @@
 
  .main-nav__item {
   text-align: center;
-
-
   width: 320px;
   height: 70px;
- background-color: $colorHeader;
- padding-top: 27px;
+  background-color: $colorHeader;
+  padding-top: 27px;
  }
-
 .main-nav__link {
-
   text-transform: uppercase;
   font-size: 18px;
   color: $ColorFontWhite;
@@ -18,5 +14,4 @@
 }
 .main-nav__list {
   padding: 0;
-
-}
+ }

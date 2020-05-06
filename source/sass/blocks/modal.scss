@@ -6,13 +6,11 @@
 .modal__title {
   width: 280px;
   color: black;
-   font-size: 14px;
+  font-size: 14px;
   text-align: center;
   padding-top: 35px;
   padding-bottom: 35px;
-
 }
-
 .modal__item {
   padding-top: 10px;
   margin-bottom: 25px;
@@ -21,7 +19,7 @@
 .modal__label {
   font-size: 14px;
   margin-left: 20px;
-  color: tomato;
+  color: $colorFontRed;
   text-transform: uppercase;
 }
 .modal__input {
