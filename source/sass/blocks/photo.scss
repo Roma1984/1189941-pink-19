@@ -1,18 +1,14 @@
- .photo__title {
-  padding-top: 55px;
-  width: 280px;
+.photo__title {
+  margin: auto;
+  width: 250px;
   text-align: center;
   font-size: 14px;
+  padding-top: 55px;
   padding-bottom: 60px;
- }
-.photo {
-  background-color: white;
-  width: 320px;
-  padding: 0;
-  margin: 0;
-  }
-  .photo__day {
-  position: relative;
+  line-height: 30px
+}
+.photo__day {
+  z-index: 1;
   font-size: 12px;
   color: $ColorFontWhite;
   text-align: center;
@@ -20,12 +16,28 @@
   width: 140px;
   height: 35px;
   background-color: $colorFontRed;
-  top: 840px;
-  left: 180px;
+  top: 891x;
+  left: 150px;
   position: absolute;
-  }
+}
+.photo__card {
+  padding: 0;
+  margin: 0;
+}
+.photo__img {
+  margin: auto;
+  position: relative;
+}
+.photo__discription--panorama {
+  height: 190px;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
 .photo__discription {
+  margin: auto;
   padding-top: 20px;
+  margin-bottom: 20px;
   width: 280px;
   background-color: $colorBodyT;
 }
@@ -34,16 +46,19 @@
   font-size: 14px;
 }
 .phono__time {
+  font-size: 14px;
   margin-left: 5px;
-  color: #283645;
+  text-transform: uppercase;
+  color: #bcc0c4;
 }
 .photo__text {
+  margin-top: 0;
+  font-size: 14px;
   margin-left: 20px;
-  width: 220px;
 }
 .photo__like {
   margin-left: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 .photo__btn {
   border: none;
@@ -52,10 +67,139 @@
   background-image: url(../img/icon-heart.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $colorBodyT;
 }
 .photo__counter {
   color: $colorFontRed;
   margin-left: 20px;
   font-size: 12px;
   text-transform: uppercase;
+}
+.photo__day {
+  position: relative;
+  font-size: 12px;
+  color: $ColorFontWhite;
+  text-align: center;
+  content: "";
+  width: 140px;
+  height: 35px;
+  background-color: $colorFontRed;
+  top: 891x;
+  left: 150px;
+  position: absolute;
+}
+@media (min-width: $tablet-width) {
+.photo__wrapper {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  width: 620px;
+  margin: auto;
+}
+.photo__title {
+  padding-top: 100px;
+  font-size: 18px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  width: 440px;
+}
+.photo__day {
+  height: 40px;
+  margin-top: 55px;
+  left: 500px;
+}
+.photo__phanorama {
+  width: 660px;
+  height: 509px;
+}
+.photo__img--panorama {
+  width: 660px;
+  margin: auto;
+}
+.photo__day {
+  height: 40px;
+  margin-top: 55px;
+  left: 500px;
+}
+.photo__discription {
+  height: 135px;
+  width: 300px;
+}
+.photo__discription--panorama {
+  width: 620px;
+  height: 100px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photo__author--panorama {
+  order: 0;
+}
+.photo__like--panorama {
+  margin-right: 30px;
+  padding: 0;
+}
+.photo__counter {
+  margin: 0;
+}
+.photo__counter--panorama {
+  margin-right: 20px;
+}
+.photo__like {
+  order: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.photo__btn {
+  order: 1;
+  margin-right: 30px;
+}
+.photo__counter {
+  order: 0;
+}
+.photo__text--panorama {
+  order: 2;
+  }
+}
+@media (min-width: $desktop-width) {
+.photo {
+  margin: auto;
+  padding-top: 92px;
+}
+.photo__img--panorama {
+  width: 960px;
+}
+.photo__wrapper {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+.photo__card {
+  margin: 0;
+}
+.photo__title {
+  padding-bottom: 100px;
+  width: 580px;
+}
+.photo__day {
+  height: 35px;
+  margin-top: 60px;
+  left: 930px;
+}
+.photo__discription {
+  height: 155px;
+  width: 300px;
+}
+.photo__discription--panorama {
+  width: 940px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.photo__text {
+  width: 880px;
+  }
 }

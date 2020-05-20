@@ -1,0 +1,78 @@
+.timer {
+  display: none;
+}
+@media (min-width: $tablet-width) {
+  .timer {
+  display: flex;
+  justify-content: right;
+  padding-top: 60px;
+}
+.timer__left {
+  margin: auto;
+  display: flex;
+}
+ .timer__item {
+  display: flex;
+  position: relative;
+}
+ .timer__item::before {
+  content: "";
+  display: block;
+  background: url(../img/icon-timer.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 345px;
+  padding-bottom: 65px;
+  margin-left: 20px;
+}
+  .timer__item:after {
+    content: "24";
+    font-size: 96px;
+    color: #d22856;
+    position: absolute;
+    top: 170px;
+    left: 90px;
+}
+  .timer__title {
+  font-size: 30px;
+  width: 170px;
+  line-height: normal;
+}
+.timer__text br {
+  display: none;
+}
+  .timer__description {
+  margin-left: 50px;
+}
+  .timer__text {
+  font-size: 14px;
+}
+  .timer__link-text a {
+  color: $colorFontRed;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .timer {
+    background-color: #f2f2f2;
+  }
+  .timer__item {
+  margin-left: 130px;
+
+}
+  .timer__item:after {
+  font-size: 120px;
+}
+  .timer__text {
+  font-size: 18px;
+  width: 570px;
+}
+  .timer__title {
+  width: 300px;
+}
+  .timer__description {
+  margin-left: 70px;
+  }
+}

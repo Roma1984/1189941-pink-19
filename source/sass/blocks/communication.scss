@@ -1,27 +1,113 @@
-
 .communication {
-  width: 320px;
-  padding-top: 10px;
-  margin-bottom: 25px;
-  margin-left: 20px;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
   background-color: $colorBody;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
-.communication__label {
+ .communication__title {
+  opacity: 0;
+}
+ .communication__label {
   font-size: 14px;
   margin-left: 20px;
   color: $colorFontRed;
   text-transform: uppercase;
 }
-.communication__input {
+ .communication__input {
   margin-top: 20px;
-  height: 65px;
-  width: 220px;
+  height: 60px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
 }
-.communication__item {
+ .communication__item {
+  padding-top: 40px;
+  margin-left: 20px;
+}
+
+
+
+
+@media (min-width: $tablet-width) {
+  .communication {
+  min-width: 620px;
+  margin-bottom: 70px;
+  order: 2;
+}
+  .communication__title {
+    width: 265px;
+  opacity: 1;
+  font-size: 14px;
+  text-align: center;
+  color: $colorFontRed;
+  text-transform: uppercase;
+}
+ .communication__label {
+   order: 1;
+   margin-top: 20px;
+ }
+
+  .communication__item {
+  width: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+
   padding-top: 10px;
   margin-bottom: 25px;
   margin-left: 20px
+
+}
+ .communication__input {
+  width: 440px;
+  order: 0;
+}
+.communication__item__input::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -128px;
+  width: 64px;
+  height:66px;
+  border: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.communication__item--phone::before {
+  background: #e5e5e5 url(../img/icon-phone.svg) no-repeat center;
+  background-size: 20px 19px;
+}
+.communication__item--email::before {
+  background: #e5e5e5 url(../img/icon-mail.svg) no-repeat center;
+  background-size: 18px 13px;
+}
+
+
+
+}
+@media (min-width: $desktop-width) {
+.communication {
+  padding: 0;
+  width: 940px;
+  margin-top: 40px;
+}
+.communication__title {
+    width: 265px;
+}
+.communication__input {
+    width: 267px;
+}
+.communication__item__input::before {
+  right: 15px;
+}
+.communication__wrapper {
+    display: flex;
+    width: 820px;
+    margin: auto;
+  }
 }

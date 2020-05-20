@@ -1,20 +1,22 @@
 .modal {
-  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
   background-color: $colorBody;
-  padding-bottom: 30px;
+  padding-top: 40px;
 }
 .modal__title {
+
   width: 280px;
   color: black;
   font-size: 14px;
   text-align: center;
   padding-top: 35px;
-  padding-bottom: 35px;
+
 }
 .modal__item {
-  padding-top: 10px;
-  margin-bottom: 25px;
   margin-left: 20px;
+  width: 280px;
 }
 .modal__label {
   font-size: 14px;
@@ -23,10 +25,59 @@
   text-transform: uppercase;
 }
 .modal__input {
-  margin-top: 20px;
-  height: 65px;
-  width: 220px;
-  padding-left: 20px;
+  margin-top: 15px;
+  height: 60px;
+  padding-left: 25px;
   padding-right: 20px;
   font-size: 18px;
+  border: 3px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .modal {
+    border: none;
+  }
+  .modal__title {
+    width: 480px;
+    font-size: 18px;
+}
+  .modal__item {
+  width: 620px;
+  margin: 0;
+  display: flex;
+  padding-top: 30px;
+}
+ .modal__label{
+   margin: 0 auto;
+   margin-right: 20px;
+   transform: translate(0, 40px);
+ }
+  .modal__input {
+  width: 465px;
+  flex-grow: 1;
+}
+ .modal__input:nth-child(odd) {
+  width: 480px;
+}
+  .modal:first-child {
+  border-color: #fefefe;
+  order: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+  .modal{
+    margin: 0;
+    width: 435px;
+  }
+  .modal__title {
+    width: 750px;
+}
+ .modal__item {
+  width:435px;
+ }
+ .modal__input {
+   width: 340px;
+}
 }

@@ -1,18 +1,23 @@
 @import "variables.scss";
+@import "blocks/fonts.scss";
+@import "blocks/btn.scss";
 
 @import "blocks/body-page.scss";
-@import "blocks/header.scss";
+@import "blocks/main-nav__logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page.scss";
-@import "blocks/screen.scss";
+@import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
+@import "blocks/page-main__screen.scss";
 @import "blocks/download.scss";
 @import "blocks/information.scss";
 @import "blocks/advantage.scss";
+@import "blocks/timer.scss";
 @import "blocks/screen-phone.scss";
 @import "blocks/reivew.scss";
 @import "blocks/price.scss";
-@import "blocks/сontacts.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer__logotip.scss";
 @import "blocks/map.scss";
 @import "blocks/intro.scss";
 
@@ -24,8 +29,10 @@
 @import "blocks/travels.scss";
 @import "blocks/personal.scss";
 @import "blocks/footer.scss";
+@import "blocks/socials.scss";
 @import "blocks/modal-popup.scss";
 
 
 @import "blocks/photo.scss";
 @import "blocks/upload.scss";
+@import "blocks/visually-hidden.scss";

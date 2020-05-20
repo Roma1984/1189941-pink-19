@@ -1,6 +1,184 @@
 .reivew {
+  padding: 0;
+  margin: 0 auto;
   background-color: $colorBody;
-  width: 320px;
-  margin-top: -58px;
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+.reivew__item {
+  margin: auto;
+  text-align: center;
+}
+.reivew__item:not(:first-child) {
+  display: none;
+}
+.reivew__title {
+  text-align: center;
+  font-size: 14px;
+}
+.review__text {
+  display: none;
+  font-size: 18px;
+}
+.reivew__description {
+  font-size: 14px;
+}
+.reivew__btn {
+  border: none;
+}
+.review__pagination {
+  display: none;
+}
+.reivew__toggle {
+  box-sizing: initial;
+  position: absolute;
+  left: 50%;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.reivew__toggle button {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: $colorBodyT;
+  cursor: pointer;
+}
+.radio input { display: none; /* Прячем исходный переключатель */ }
+   .radio span {
+    position: relative; /* Относительное позиционирование */
+    display: inline-block; /* Строчно-блочный элемент */
+    width: 6px; height: 6px; /* Размеры */
+    background: #bec2c7; /* Серый цвет фона */
+    border-radius: 50%; /* Круглый переключатель */
+    margin-right: 15px;
+}
+.radio input:checked + span {
+  border: 3px solid #000000;
+  background-color: #fefefe;
+}
+   /* Добавляем белую точку по центру */
+.radio input:checked + span::before {
+    content: '';
+    position: absolute;
+    left: 6px; top: 6px;
+    background: #bec2c7;
+    width: 2px; height: 2px;
+    border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .reivew__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 620px;
+}
+  .reivew__client {
+  order: 1;
+  margin: 0 auto;
+}
+ .reivew__title {
+  font-size: 20px;
+}
+  .review__text {
+  display: block;
+  order: 2;
+  font-size: 14px;
+}
+.reivew__description {
+  width: 560px;
+  font-size: 18px;
+  margin: auto;
+  order: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+.reivew {
+	padding: 20px;
+	margin-top: 50px;
+	position: relative;
+	width: 700px;
+  }
+.reivew::before {
+    content: "";
+  display: block;
+  width: 79px;
+  height: 63px;
+  background:  url(../img/icon-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 250px;
+  position: relative;
+  margin-bottom: 50px;
+  }
+.reivew__item {
+  position: relative;
+}
+.reivew__description {
+  width: 690px;
+  padding-bottom: 50px;
+}
+.reivew__title {
+  order: 1;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 0;
+}
+.review__text {
+  padding-top: 10px;
+  font-size: 18px;
+}
+.reivew__item {
+  width: 690px;
+  margin: 0 auto;
+  padding: 0;
+ }
+ .review__pagination {
+  display: block;
+}
+.reviews__nav--previous {
+  border: none;
+  width: 22px;
+  height: 41px;
+  top: 150px;
+  left: -30px;
+  background-image: url("../img/icon-review-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+}
+.reviews__nav--previous:hover {
+  fill: #969da4;
+}
+.reviews__nav--previous:active {
+  fill: #e9ebec;
+}
+.reviews__nav--next {
+  border: none;
+  width: 22px;
+  height: 41px;
+  top: 150px;
+  left: 750px;
+  position: inherit;
+  background-image: url("../img/icon-review-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+}
+.reviews__nav--next:hover {
+  fill: #969da4;
+}
+.reviews__nav--next:active {
+  fill: #e9ebec;
+}
+.reivew__toggle {
+  display: none;
+}
 }

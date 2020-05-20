@@ -1,0 +1,63 @@
+.btn {
+  margin: 0 auto;
+  width: 262px;
+  height: 52px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  color: $ColorFontWhite;
+  border: 3px solid $colorBody;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0);
+  }
+
+.download__btn {
+margin: auto;
+}
+
+
+.upload__btn--ok {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border: 3px solid #d22856;
+  color: $colorFontRed;
+}
+.upload__btn--ok:hover {
+  background-color: #d22856;
+  color: #ffffff;
+}
+.upload__btn--ok:active {
+  background-color: #d22856;
+  color: #e07e94;
+}.upload__btn--no {
+  border: 3px solid #dddfe0;
+  color: #dddfe0 ;
+}
+.upload__btn--no:hover {
+  border-bottom: 3px solid #b5b9be;
+  color: #b5b9be;
+}
+.upload__btn--no:active {
+  background-color: #b5b9be;
+  color: #c6c9cd;
+}
+
+
+@media (min-width: $tablet-width) {
+.download__btn:hover {
+  color: $colorFontRed;
+  background-color: $colorBody;
+}
+.download__btn:active {
+  color: $colorFontRed;
+  background-color: $colorBody;
+  }
+  .btn {
+    margin: auto;
+    width: 260px;
+    display: block;
+  }
+  .upload__btn--ok {
+    margin-bottom: 25px;
+    }
+}
