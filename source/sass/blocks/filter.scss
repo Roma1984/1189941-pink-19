@@ -1,20 +1,21 @@
-.filter {
-  width: 320px;
+ .filter {
+  min-width: 320px;
   background-color: $colorBodyT;
+
   }
 .filter__title {
+  padding-top: 80px;
   width: 280px;
   text-align: center;
   text-transform: uppercase;
+  color: $colorFontRed;
   }
 .filter__item {
   padding-bottom: 70px;
   }
-
 .filter__list {
   padding-left: 20px;
   margin-top: 45px
-
   }
 .filter__label {
   position: relative;
@@ -24,7 +25,8 @@
   cursor: pointer;
   color: #283136;
   margin-bottom: 20px;
-  padding-left: 37px;
+  padding-left: 67px;
+  padding-top: 10px;
   }
 .filter__label::before {
 content: "";
@@ -33,9 +35,14 @@ content: "";
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url("../img/Layer164.png");
-  background-repeat: no-repeat;
-  background-color: transparent;
+  border: 3px solid #e5e5e5;
+  background-color: $colorBody;
+  }
+  .filter__label::before:hover {
+    border: 3px solid #283645;
+  }
+  .filter__label::before:active {
+    border: 3px solid #d22856;
   }
 .filter__label::before {
   opacity: 1;
@@ -50,9 +57,10 @@ content: "";
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url("../img/on.png");
+  background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-position: center;
+  fill: #d22856;
   }
 .filter__list li {
   position: relative;
@@ -65,3 +73,48 @@ content: "";
 input:focus + label::before {
   opacity: 1;
   }
+  @media (min-width: $tablet-width) {
+    .filter {
+      background-color: $colorBody;
+      order: 3;
+    }
+    .filter__title {
+      padding: 0;
+      width: 450px;
+      font-size: 14px;
+    }
+    .filter__list {
+      padding-left: 40px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    .filter {
+      width: 940px;
+    }
+    .filter__list {
+      padding-top: 55px;
+    margin: 0 auto;
+    width: 820px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+.filter__item--selfi {
+  order: 0;
+}
+.filter__item--beach {
+  order: 4;
+}
+.filter__item--noris {
+  order: 1;
+}
+.filter__item--souvenir {
+  order: 5;
+}
+.filter__item--tower {
+  order: 3;
+}
+.filter__item--hotel {
+  order: 6;
+  }
+}

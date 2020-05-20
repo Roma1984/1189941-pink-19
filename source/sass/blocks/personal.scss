@@ -1,47 +1,104 @@
- .personal {
-  width: 320px;
+.personal {
+  padding: 0;
+  margin: auto;
   padding-top: 10px;
   margin-bottom: 25px;
-  margin-left: 20px;
   background-color: $colorBody;
 }
 .personal__title {
   color: $colorFontRed;
   width: 200px;
   text-align: center;
-  padding-top: 85px;
+  padding-top: 40px;
   font-size: 14px;
   text-transform: uppercase;
- }
-.personal__item {
-  padding-top: 10px;
-  margin-left: 20px;
 }
-.personal__input {
+  .personal__item {
+  padding: 0;
+  margin: 0 auto;
+  width: 280px;
+}
+  .personal__input {
+  font-size: 18px;
   margin-top: 20px;
-  height: 200px;
-  width: 220px;
+  height: 160px;
+  width: 240px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 50px;
-   resize: none;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  resize: none;
 }
-.personal__btn {
-  width: 260px;
+  .personal__btn {
+  width: 280px;
   height: 65px;
   background-color: $color-btn;
   margin-bottom: 45px;
   color: $ColorFontWhite;
   font-size: 18px;
+  text-transform: uppercase;
 }
-.personal__text{
+.personal__text {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  display: flex;
   sup {
-    color: $colorFontRed;
+  color: $colorFontRed;
+  }
+}
+@media (min-width: $tablet-width) {
+  .personal {
+    margin-top: 60px;
+  order: 4;
+}
+  .personal__title {
+  padding: 0;
+}
+  .personal__item {
+  width: 500px;
+}
+  .personal__input {
+  width: 470px;
+}
+ .personal__wrapper {
+  margin-top: 55px;
+   display: flex;
+  order: 5;
+}
+  .personal__btn {
+  margin: 0;
+  width: 300px;
+}
+.personal__postscript {
+  margin: auto;
+}
+  .personal__text{
+  margin-left: 120px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .personal {
+
+    width: 940px;
+    height: 215px;
+  }
+  .personal__title{
+    width: 265px;
+  }
+
+  .personal__item {
+
+     margin: 0;
+     margin-left: 60px;
+  }
+  .personal__input {
+    width: 780px;
+    height: 85px;
+  }
+  .personal__text {
+    margin-left: 442px;
   }
 }

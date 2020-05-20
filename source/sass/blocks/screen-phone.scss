@@ -1,4 +1,78 @@
 .screen-phone {
-  margin-left: 80px;
-  margin-top: 40px;
+  width: 256px;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  padding: 0;
+  order: 1;
+}
+@media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+.screen-phone {
+  background-image: url(../img/iphone-screen-mobile@2x.png);
+  background-size: 157px auto;
+ }
+}
+@media (min-width: $tablet-width) {
+.screen-phone{
+  position: relative;
+  background-image: url(../img/iphone-screen-1-tablet@1x.png);
+  background-image: url(../img/iphone-screen-3-tablet@1x.png);
+  width: 268px;
+  height: 481px;
+  margin: 0;
+  }
+}
+@media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
+(min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+.screen-phone{
+  background-size: 268px auto;
+  background-image: url(../img/iphone-screen-1-tablet@2x.png);
+  background-image: url(../img/iphone-screen-3-tablet@2x.png);
+  }
+}
+
+@media (min-width: $desktop-width) {
+.screen-phone {
+  background-image: none;
+}
+.advantage__item {
+   position: relative;
+}
+.advantage__item::before {
+   content: "";
+   width: 292px;
+   height: 302px;
+   display: block;
+   position: relative;
+   top: 0;
+   left: 0;
+ }
+.advantage--first {
+  background-image: url(../img/iphone-screen-1-desktop@1x.png);
+  background-repeat: no-repeat;
+ }
+.advantage--second {
+  background-image: url(../img/iphone-screen-2-desktop@1x.png);
+  background-repeat: no-repeat;
+ }
+.advantage--thrid {
+  background-image: url(../img/iphone-screen-3-desktop@1x.png);
+  background-repeat: no-repeat;
+ }
+}
+@media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
+(min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+.advantage--first {
+  background-image: url(../img/iphone-screen-1-desktop@2x.png);
+  background-size: 292px auto;
+}
+.advantage--second {
+  background-image: url(../img/iphone-screen-2-desktop@2x.png);
+  background-size: 292px auto;
+}
+.advantage--thrid {
+  background-image: url(../img/iphone-screen-3-desktop@2x.png);
+  background-size: 292px auto;
+  }
 }
