@@ -1,26 +1,108 @@
 .modal-popup {
-  display: none;
-  background-color: $colorBodyT;
   width: 320px;
-  height: 290px;
-  }
+  background-color: $colorBody;
+}
+.modal-popup--error {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0,1,1,.15);
+  z-index: 10;
+}
 .modal-popup__title {
+  margin: 0;
   font-size: 18px;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 35px;
-  }
+  font-weight: 700;
+}
 .modal-popup__text {
-  width: 260px;
+  width: 280px;
   text-align: center;
   margin-left: 20px;
   font-size: 14px;
-  padding-bottom: 45px;
-  }
-.modal-popup__btn{
+  margin: auto;
+}
+.modal-popup--success {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 320px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 7px 15px rgba(0,1,1,.15);
+  z-index: 10;
+}
+.modal-popup__text--success {
+  font-size: 14px;
+  padding-bottom: 35px;
+}
+.modal-popup__title--success {
   width: 280px;
-  height: 65px;
+  text-align: center;
   margin-left: 20px;
-  background-color: $color-btn;
-  color: $colorBody;
+  font-size: 18px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.footer__popup--success {
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: $colorBodyT;
+}
+.footer__popup  {
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+@media (min-width: $tablet-width) {
+.modal-popup {
+  width: 460px;
+}
+.modal-popup__title {
+  font-size: 30px;
+  width: 224px;
+  margin: auto;
+  line-height: 40px;
+}
+.modal-popup__text {
+  font-size: 18px;
+  width: 330px;
+}
+.modal-popup__text--success {
+  width: 310px;
+}
+.footer__popup--success {
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 0 0 5px 5px;
   }
+}
+
+
+
+@media (min-width: $desktop-width) {
+.modal-popup {
+  width: 780px;
+}
+.modal-popup__text  {
+  width: 360px;
+}
+.modal-popup__title {
+  width: 500px;
+}
+.modal-popup__text--success {
+  width: 470px;
+}
+.footer__popup  {
+  background-color: $colorBodyT;
+  margin-top: 70px;
+  }
+}

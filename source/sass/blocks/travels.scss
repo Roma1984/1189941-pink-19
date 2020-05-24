@@ -7,6 +7,7 @@
 }
   .travels__title {
   padding-top: 140px;
+  padding-bottom: 40px;
   font-size: 14px;
   text-align: center;
   color: $colorFontRed;
@@ -75,7 +76,7 @@
 }
   .travels__list {
   margin: 60px;
-  
+
   margin-left: 70px;
   }
    input[type="radio"]:checked + label::before {

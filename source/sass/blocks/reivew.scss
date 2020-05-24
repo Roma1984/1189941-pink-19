@@ -1,9 +1,9 @@
 .reivew {
-  padding: 0;
-  margin: 0 auto;
   background-color: $colorBody;
-  padding-top: 40px;
+  padding-top: 140px;
   padding-bottom: 40px;
+  font-size: 18px;
+
 }
 .reivew__item {
   margin: auto;
@@ -13,8 +13,12 @@
   display: none;
 }
 .reivew__title {
-  text-align: center;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .review__text {
   display: none;
@@ -22,6 +26,8 @@
 }
 .reivew__description {
   font-size: 14px;
+  width: 280px;
+  line-height: 30px;
 }
 .reivew__btn {
   border: none;
@@ -73,6 +79,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reivew {
+    padding: 0;
+  }
   .reivew__item {
   display: flex;
   justify-content: space-between;
@@ -82,9 +91,11 @@
   .reivew__client {
   order: 1;
   margin: 0 auto;
+  padding-top: 30px;
 }
  .reivew__title {
   font-size: 20px;
+  margin: 0;
 }
   .review__text {
   display: block;
@@ -92,29 +103,31 @@
   font-size: 14px;
 }
 .reivew__description {
-  width: 560px;
+  width: 590px;
   font-size: 18px;
   margin: auto;
   order: 0;
   }
+
 }
 @media (min-width: $desktop-width) {
 .reivew {
-	padding: 20px;
+	padding-top: 70px;
 	margin-top: 50px;
 	position: relative;
-	width: 700px;
+  width: 700px;
+  margin: auto;
   }
 .reivew::before {
-    content: "";
+  content: "";
   display: block;
   width: 79px;
   height: 63px;
-  background:  url(../img/icon-quotes.svg);
+  background: url(../img/icon-quotes.svg);
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
-  left: 250px;
+  left: 310px;
   position: relative;
   margin-bottom: 50px;
   }
@@ -123,7 +136,7 @@
 }
 .reivew__description {
   width: 690px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .reivew__title {
   order: 1;
@@ -147,8 +160,8 @@
   border: none;
   width: 22px;
   height: 41px;
-  top: 150px;
-  left: -30px;
+  top: 215px;
+  left: -125px;
   background-image: url("../img/icon-review-arrow-left.svg");
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0);
@@ -164,8 +177,8 @@
   border: none;
   width: 22px;
   height: 41px;
-  top: 150px;
-  left: 750px;
+  top: 215px;
+  left: 800px;
   position: inherit;
   background-image: url("../img/icon-review-arrow-right.svg");
   background-repeat: no-repeat;

@@ -102,13 +102,14 @@
   background-image: url("../img/iphone-hand-desktop@1x.png");
   width: 1050px;
   height: 645px;
-  left: 170px;
+  left: 50%;
+  margin-left: -450px;
 }
 .page-main__title {
-  margin-left: 165px;
+  margin-left: 480px;
   padding-top: 220px;
   font-size: 50px;
-  width: 320px;
+  width: 304px;
   line-height: 60px;
   font-weight: 300;
 }

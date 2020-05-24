@@ -27,6 +27,8 @@
   background-color: $colorHeader;
   text-transform: uppercase;
   position: relative;
+  font-size: 18px;
+  line-height: 1.4;
   span {
     font-weight: 300;
     font-size: 24px;
@@ -68,6 +70,8 @@
   border: solid 3px #eeeeee;
 }
 .price__toggle {
+  padding-top: 15px;
+  padding-bottom: 15px;
   height: 60px;
   background-color: $colorBodyT;
   box-sizing: initial;
@@ -77,8 +81,8 @@
   text-align: center;
   transform: translateX(-50%);
 }
-
 .price__feature {
+  text-transform: uppercase;
   margin-left: 20px;
 }
 .price__feature-status {
@@ -110,15 +114,13 @@
   background: url(../img/icon-no.svg);
   background-repeat: no-repeat;
 }
-
-
-
 @media (min-width: $tablet-width) {
 .price::before {
   width: 660px;
   top: -258px;
 }
 .price__table {
+  margin: auto;
   width: 620px;
   transform: none;
 }
@@ -158,14 +160,14 @@
   display: block;
   opacity: 0;
   }
-  .radio {
+  .price__toggle .radio {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
 .price::before {
-  width: 1200px;
+  width: 100%;
   top: -289px;
   }
   .price__table {

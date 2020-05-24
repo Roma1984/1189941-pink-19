@@ -1,6 +1,6 @@
 .advantage {
   background-color: $colorBodyT;
-
+  top: 80px;
   position: relative;
   }
 
@@ -44,11 +44,10 @@ margin: auto;
   position: relative;
   display: flex;
   justify-content: right;
-  margin-top: 80px;
 }
 .advantage__wrapper {
-  display: flex;
   margin: auto;
+  display: flex;
 }
 .advantage::before {
   width: 100%;
@@ -61,10 +60,11 @@ top: -80px;
 .advantage__list {
   position: relative;
   order: 2;
-  margin: auto;
+  margin: 0 auto;
 }
 .advantage__title {
   text-align: left;
+  font-weight: 700;
 }
 .advantage__description {
   text-align: left;
@@ -88,18 +88,22 @@ top: -80px;
  }
 }
 @media (min-width: $desktop-width) {
-.advantage {
-  flex-wrap: wrap;
-}
+
 .advantage::before {
   width: 100%;
+  position: absolute;
+  display: block;
+  content: "";
+  height: 80px;
+  top: -80px;
 }
 .advantage__item::before {
   padding-bottom: 60px;
+
 }
 .advantage__list {
   display: flex;
-  top: -50px;
+  top: -100px;
 }
 .advantage__title {
   font-size: 30px;
@@ -113,8 +117,12 @@ top: -80px;
   background-image: url(../img/iphone-screen-3-desktop@1x.png);
 }
 .advantage__description {
-  width: 260px;
+  width: 250px;
   font-size: 18px;
   text-align: center;
+  line-height: 30px;
+  }
+  .advantage__description--second {
+    width: 230px;
   }
 }
