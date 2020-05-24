@@ -12,6 +12,12 @@ fieldset {
   text-align: center;
   font-size: 14px;
   padding-top: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 40px;
+  line-height: 30px;
+  width: 280px;
 }
 .form__title span {
   display: none;
@@ -46,7 +52,7 @@ fieldset {
   .form__title {
     padding-top: 92px;
     width: 775px;
-  }
+    }
   fieldset {
 
     width: 920px;

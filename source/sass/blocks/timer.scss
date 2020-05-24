@@ -8,34 +8,28 @@
   padding-top: 60px;
 }
 .timer__left {
-  margin: auto;
   display: flex;
+  margin: auto;
 }
  .timer__item {
+  left: 20px;
+  width: 238px;
+  height: 276px;
   display: flex;
   position: relative;
 }
- .timer__item::before {
-  content: "";
-  display: block;
-  background: url(../img/icon-timer.svg);
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-  width: 298px;
-  height: 345px;
-  padding-bottom: 65px;
-  margin-left: 20px;
-}
+
   .timer__item:after {
     content: "24";
     font-size: 96px;
     color: #d22856;
     position: absolute;
     top: 170px;
-    left: 90px;
+    left: 60px;
+    font-weight: 700;
 }
   .timer__title {
+    margin: 0;
   font-size: 30px;
   width: 170px;
   line-height: normal;
@@ -44,9 +38,11 @@
   display: none;
 }
   .timer__description {
-  margin-left: 50px;
+  margin-left: 90px;
+  padding: 71px 40px 115px 0;
 }
   .timer__text {
+    width: 310px;
   font-size: 14px;
 }
   .timer__link-text a {
@@ -66,13 +62,18 @@
   font-size: 120px;
 }
   .timer__text {
-  font-size: 18px;
-  width: 570px;
+    font-size: 18px;
+    width: 530px;
+    line-height: 30px;
 }
   .timer__title {
   width: 300px;
 }
   .timer__description {
   margin-left: 70px;
+  }
+  .timer__link-text {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
