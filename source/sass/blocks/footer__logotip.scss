@@ -1,7 +1,7 @@
 .footer__logotip {
   display: inline-block;
   vertical-align: top;
-  height: 40px; 
+  height: 40px;
 
   @media (min-width: $tablet-width) {
     width: 150px;
@@ -35,7 +35,7 @@
 .footer__logotip__glasses {
   fill: currentColor;
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -43,7 +43,7 @@
 .footer__logotip__glasses-crop {
   display: none;
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
     display: block;
     fill: currentColor;
   }
@@ -51,8 +51,7 @@
 
 .footer__logotip__stars {
   display: none;
-
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
     display: block;
     fill: inherit;
   }
@@ -60,8 +59,7 @@
 
 .footer__logotip__star {
   display: none;
-
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
     display: block;
     fill: currentColor;
   }
