@@ -2,17 +2,20 @@
   background-color: $colorHeader;
 }
 .download__app {
-  width: 280px;
+
   display: block;
   padding-top: 30px;
   margin-top: -5px;
 }
 .download__list {
+  padding: 0;
+  margin: 0 auto;
+  justify-content: space-between;
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
   list-style: none;
-   width: 280px;
+  width: 280px;
 }
 .download__link--apple{
   content: "";
@@ -76,18 +79,17 @@
 }
 @media (min-width: $desktop-width) {
 .download   {
-  width: 430px;
-  }
+  width: 960px;
+}
 .download__list {
   padding-top:50px;
-  }
+}
 .download__app {
   left: 50%;
-  margin-left: 266px;
   bottom: 80px;
 }
 .download__description {
   font-size: 18px;
   width: 300px;
-}
   }
+}

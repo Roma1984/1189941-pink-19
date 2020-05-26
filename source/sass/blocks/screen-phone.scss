@@ -25,7 +25,6 @@
   margin: 0;
   }
 }
-
 @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
 (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
 .screen-phone{
@@ -34,22 +33,21 @@
   background-image: url(../img/iphone-screen-3-tablet@2x.png);
   }
 }
-
 @media (min-width: $desktop-width) {
 .screen-phone {
   background-image: none;
 }
 .advantage__item {
-   position: relative;
+  position: relative;
 }
 .advantage__item::before {
-   content: "";
-   width: 292px;
-   height: 302px;
-   display: block;
-   position: relative;
-   top: 0;
-   left: 0;
+  content: "";
+  width: 292px;
+  height: 302px;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
  }
 .advantage--first {
   background-image: url(../img/iphone-screen-1-desktop@1x.png);

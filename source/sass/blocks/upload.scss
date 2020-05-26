@@ -29,20 +29,20 @@
 }
 .upload__input--brightness {
   display: block;
-padding-top: 40px;
-  }
-  .upload__item {
-    position: relative;
-  }
+  padding-top: 40px;
+}
+.upload__item {
+  position: relative;
+}
 .upload__item::before {
   content: "";
-    display: block;
-    position: absolute;
-    top: 115px;
-    left: -40px;
-    width: 100%;
-    height: 1px;
-    background-color: #dddfe0;
+  display: block;
+  position: absolute;
+  top: 115px;
+  left: -40px;
+  width: 100%;
+  height: 1px;
+  background-color: #dddfe0;
 }
 .upload-crop--icon {
   fill: #d22856;
@@ -59,42 +59,37 @@ fill: #b5b9be;
 .upload-brightness--icon:hover {
   fill: #8d949b;
 }
-
-  input[type=range] {
-    -webkit-appearance: none;
-    width: 240px;
-    background-color: rgba(0, 0, 0, 0);
-  }
-  input[type=range]::-webkit-slider-runnable-track {
-    height: 2px;
-    width: 250px;
-    background: #283645;
-  }
-  input[type=range]::-webkit-slider-thumb {
-    margin-top: -6px;
-    border: 3px solid #d22856;
-    background-color: #fafafa;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    -webkit-appearance: none;
-    cursor: pointer;
-  }
-  input[type=range]::-webkit-slider-thumb:active {
-    background-color: #f80606;
-    }
-
-
-
-
-
+input[type=range] {
+  -webkit-appearance: none;
+  width: 240px;
+  background-color: rgba(0, 0, 0, 0);
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  width: 250px;
+  background: #283645;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -6px;
+  border: 3px solid #d22856;
+  background-color: #fafafa;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb:active {
+  background-color: #f80606;
+}
 @media (min-width: $tablet-width) {
 .upload {
   width: 660px;
+  margin: auto;
 }
 .upload__title {
-font-size: 18px;
-width: 405px;
+  font-size: 18px;
+  width: 405px;
 }
 .upload__photo__img {
   order: 0;
@@ -106,8 +101,8 @@ width: 405px;
   display: flex;
 }
 .upload__input  {
-display: block;
-padding: 0;
+  display: block;
+  padding: 0;
 }
 .upload__tool {
   width: 16px;
@@ -143,8 +138,8 @@ padding: 0;
   top:70px;
   width: 275px;
 }
-  input[type=range] {
-    width: 200px;
+input[type=range] {
+  width: 200px;
   }
 }
 @media (min-width: $desktop-width) {

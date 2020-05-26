@@ -4,9 +4,6 @@
   padding-top: 35px;
   margin-left: 70px;
 }
-.footer--0ff {
-  display: none;
-}
 .socials__link {
   margin-right: 15px;
   width: 50px;
@@ -22,9 +19,9 @@
   opacity: 0.3;
 }
 .socials__link--twitter {
-background-image: url(../img/icon-twitter.svg);
-background-repeat: no-repeat;
-background-position: center;
+  background-image: url(../img/icon-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .socials__link--facebook {
   background-image: url(../img/icon-facebook.svg);
@@ -55,15 +52,12 @@ background-position: center;
   fill: #c6cace;
 }
 @media (min-width: $tablet-width) {
-.footer--0ff {
-  display: block;
-}
 .copyright {
   margin: 0;
   padding: 0;
 }
 .socials {
-
+  margin: auto;
   padding: 0;
   }
 }

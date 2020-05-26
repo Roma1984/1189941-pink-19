@@ -14,8 +14,8 @@
   transform: rotate(180deg);
 }
 .advantage__list {
-padding: 0;
-margin: auto;
+  padding: 0;
+  margin: auto;
 }
 .advantage__title {
   margin: auto;
@@ -31,7 +31,6 @@ margin: auto;
   text-align: center;
   margin: 0 auto;
 }
-
 .advantage__item {
   padding-bottom: 20px;
   list-style: none;
@@ -55,7 +54,7 @@ margin: auto;
   display: block;
   content: "";
   height: 80px;
-top: -80px;
+  top: -80px;
 }
 .advantage__list {
   position: relative;
@@ -82,8 +81,8 @@ top: -80px;
   width: 310px;
 }
  .screen-phone {
-   width: 268px;
-   height: 481px;
+  width: 268px;
+  height: 481px;
   background-image: url(../img/iphone-screen-3-tablet@1x.png);
  }
 }
@@ -122,7 +121,7 @@ top: -80px;
   text-align: center;
   line-height: 30px;
   }
-  .advantage__description--second {
-    width: 230px;
+.advantage__description--second {
+  width: 230px;
   }
 }

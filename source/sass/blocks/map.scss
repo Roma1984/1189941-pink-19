@@ -36,11 +36,10 @@ content: "";
   border: none;
   min-height: 200px;
   width: 100%;
-
 }
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
-  .map__wrapper {
+.map__wrapper {
   background-image: url(../img/bg-map-mobile@2x.jpg);
   background-size: 320px auto;
   }
