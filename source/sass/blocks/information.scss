@@ -32,20 +32,20 @@
 }
 @media (min-width: $desktop-width) {
 
-   .information__info {
-    font-size: 50px;
-    width: 835px;
-    padding-right: 10px;
-    padding-left: 10px;
-   margin: auto;
-  }
-  .information__subtitle {
-    margin: auto;
-    font-size: 50px;
-    width: 425px;
-    text-align: center;
-    font-weight: 300;
-    line-height: 60px;
-    padding-bottom: 50px;
+.information__info {
+  font-size: 50px;
+  width: 835px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: auto;
+}
+.information__subtitle {
+  margin: auto;
+  font-size: 50px;
+  width: 425px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 60px;
+  padding-bottom: 50px;
   }
 }

@@ -11,7 +11,6 @@
   font-size: 14px;
   text-align: center;
   padding-top: 35px;
-
 }
 .modal__item {
   margin-left: 20px;
@@ -33,48 +32,48 @@
   border-radius: 3px;
 }
 @media (min-width: $tablet-width) {
-  .modal {
-    border: none;
-  }
-  .modal__title {
-    width: 480px;
-    font-size: 18px;
+.modal {
+  border: none;
 }
-  .modal__item {
+.modal__title {
+  width: 480px;
+  font-size: 18px;
+}
+.modal__item {
   width: 620px;
   margin: 0;
   display: flex;
   padding-top: 30px;
 }
- .modal__label{
-   margin: 0 auto;
-   margin-right: 20px;
-   transform: translate(0, 40px);
- }
-  .modal__input {
+.modal__label{
+  margin: 0 auto;
+  margin-right: 20px;
+  transform: translate(0, 40px);
+}
+.modal__input {
   width: 465px;
   flex-grow: 1;
 }
- .modal__input:nth-child(odd) {
+.modal__input:nth-child(odd) {
   width: 480px;
 }
-  .modal:first-child {
+.modal:first-child {
   border-color: #fefefe;
   order: 0;
   }
 }
 @media (min-width: $desktop-width) {
-  .modal{
-    margin: 0;
-    width: 435px;
-  }
-  .modal__title {
-    width: 750px;
+.modal{
+  margin: 0;
+  width: 435px;
 }
- .modal__item {
+.modal__title {
+  width: 750px;
+}
+.modal__item {
   width:435px;
- }
- .modal__input {
-   width: 340px;
 }
+.modal__input {
+  width: 340px;
+  }
 }

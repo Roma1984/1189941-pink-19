@@ -3,7 +3,6 @@
   padding-top: 140px;
   padding-bottom: 40px;
   font-size: 18px;
-
 }
 .reivew__item {
   margin: auto;
@@ -77,27 +76,26 @@
     width: 2px; height: 2px;
     border-radius: 50%;
 }
-
 @media (min-width: $tablet-width) {
-  .reivew {
-    padding: 0;
-  }
-  .reivew__item {
+.reivew {
+  padding: 0;
+}
+.reivew__item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 620px;
 }
-  .reivew__client {
+.reivew__client {
   order: 1;
   margin: 0 auto;
   padding-top: 30px;
 }
- .reivew__title {
+.reivew__title {
   font-size: 20px;
   margin: 0;
 }
-  .review__text {
+.review__text {
   display: block;
   order: 2;
   font-size: 14px;
@@ -108,7 +106,6 @@
   margin: auto;
   order: 0;
   }
-
 }
 @media (min-width: $desktop-width) {
 .reivew {
@@ -130,7 +127,7 @@
   left: 310px;
   position: relative;
   margin-bottom: 50px;
-  }
+}
 .reivew__item {
   position: relative;
 }
@@ -193,5 +190,5 @@
 }
 .reivew__toggle {
   display: none;
-}
+  }
 }

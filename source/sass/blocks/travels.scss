@@ -1,11 +1,11 @@
-  .travels {
+.travels {
   padding: 0;
   margin: 0 auto;
   min-width: 320px;
   background-color: $colorBodyT;
   margin-top: -100px;
 }
-  .travels__title {
+.travels__title {
   padding-top: 140px;
   padding-bottom: 40px;
   font-size: 14px;
@@ -13,13 +13,13 @@
   color: $colorFontRed;
   text-transform: uppercase;
 }
-  .travels__list {
+.travels__list {
   padding: 0;
   margin: 0 auto;
   width: 280px;
   list-style: none;
 }
-  .travels__label {
+.travels__label {
   font-size: 18px;
   position: relative;
   line-height: 20px;
@@ -30,7 +30,7 @@
   padding-left: 60px;
   padding-top: 10px;
 }
-  .travels__label:before {
+.travels__label:before {
   content: "";
   width: 40px;
   height: 40px;
@@ -40,16 +40,15 @@
   border: 3px solid #e5e5e5;
   background-color: $colorBody;
   border-radius: 50%;
-  ;
 }
-  .travels__label:hover::before{
+.travels__label:hover::before{
   opacity: 1;
-  }
-  .travels__label:focus::before,
-  .travels__label:active::before {
-    opacity: 1;
 }
-  input[type="radio"]:checked + label::before {
+.travels__label:focus::before,
+.travels__label:active::before {
+  opacity: 1;
+}
+input[type="radio"]:checked + label::before {
   content: "";
   width: 40px;
   height: 40px;
@@ -60,27 +59,24 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
 @media (min-width: $tablet-width) {
-  .travels {
-    height: 300px;
+.travels {
+  height: 300px;
   background-color: $colorBody;
   margin-top: 60px;
   margin-bottom: 70px;
   order: 1;
 }
-  .travels__title {
+.travels__title {
   width: 380px;
   padding: 0;
 }
-  .travels__list {
+.travels__list {
   margin: 60px;
-
   margin-left: 70px;
-  }
-   input[type="radio"]:checked + label::before {
-    content: "";
+}
+input[type="radio"]:checked + label::before {
+  content: "";
   width: 40px;
   height: 40px;
   top: -5px;
@@ -100,5 +96,4 @@
   right: 0;
   position: relative
   }
-
 }

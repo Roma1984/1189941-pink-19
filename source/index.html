@@ -3,13 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="source/normalize.sass">
   <title>HTML Academy: Pink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/open-sans-v15-cyrillic-300.woff2" as="font">
+    <link rel="preload" href="fonts/open-sans-v15-cyrillic-regular.woff2" as="font">
+    <link rel="preload" href="fonts/open-sans-v15-cyrillic-700.woff2" as="font">
 </head>
 
 <body class="body-page">
+  <div style="display:none">
+<include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__container">

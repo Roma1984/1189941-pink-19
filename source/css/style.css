@@ -549,7 +549,7 @@ img {
     left: 50%;
     margin-left: -450px; }
   .page-main__title {
-    margin-left: 480px;
+    margin-left: 470px;
     padding-top: 220px;
     font-size: 50px;
     width: 304px;
@@ -644,12 +644,11 @@ img {
 
 @media (min-width: 960px) {
   .download {
-    width: 430px; }
+    width: 960px; }
   .download__list {
     padding-top: 50px; }
   .download__app {
     left: 50%;
-    margin-left: 266px;
     bottom: 80px; }
   .download__description {
     font-size: 18px;
@@ -1428,19 +1427,11 @@ img {
     font-size: 24px; } }
 
 .footer__logotip {
-  display: inline-block;
   vertical-align: top;
-  height: 40px; }
-  @media (min-width: 660px) {
-    .footer__logotip {
-      width: 150px;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-      margin-bottom: 17px; } }
-  @media (min-width: 960px) {
-    .footer__logotip {
-      width: 170px;
-      margin-bottom: 19px; } }
+  height: 40px;
+  width: 155px;
+  margin: 0 auto;
+  display: block; }
 
 .footer__logotip__svg {
   fill: #283645;
@@ -1458,30 +1449,39 @@ img {
 
 .footer__logotip__glasses {
   fill: currentColor; }
-  @media (min-width: 960px) {
-    .footer__logotip__glasses {
-      display: none; } }
 
 .footer__logotip__glasses-crop {
   display: none; }
-  @media (min-width: 960px) {
-    .footer__logotip__glasses-crop {
-      display: block;
-      fill: currentColor; } }
 
 .footer__logotip__stars {
   display: none; }
-  @media (min-width: 960px) {
-    .footer__logotip__stars {
-      display: block;
-      fill: inherit; } }
 
 .footer__logotip__star {
   display: none; }
-  @media (min-width: 960px) {
-    .footer__logotip__star {
-      display: block;
-      fill: currentColor; } }
+
+@media (min-width: 660px) {
+  .footer__logotip {
+    width: 150px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-bottom: 17px;
+    margin: 0; } }
+
+@media (min-width: 960px) {
+  .footer__logotip {
+    width: 170px;
+    margin-bottom: 19px; }
+  .footer__logotip__glasses {
+    display: none; }
+  .footer__logotip__glasses-crop {
+    display: block;
+    fill: currentColor; }
+  .footer__logotip__stars {
+    display: block;
+    fill: inherit; }
+  .footer__logotip__star {
+    display: block;
+    fill: currentColor; } }
 
 .map__wrapper {
   position: relative;
@@ -1619,7 +1619,7 @@ fieldset {
     width: 510px;
     font-size: 18px; }
   .form__title span {
-    display: block; }
+    display: inline-block; }
   fieldset {
     width: 620px;
     border: 2px solid #e5e5e5;
@@ -1770,7 +1770,8 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
   background-position: center;
-  fill: #d22856; }
+  fill: #d22856;
+  display: block; }
 
 .filter__list li {
   position: relative;
@@ -2216,6 +2217,7 @@ input[type="radio"]:checked + label::before {
     margin: 0;
     padding: 0; }
   .socials {
+    margin: auto;
     padding: 0; } }
 
 @media (min-width: 960px) {

@@ -9,37 +9,32 @@
   border: 3px solid $colorBody;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0);
-  }
-  .modal-popup__btn {
-    width: 268px;
-    height: 61px;
-    background-color: $color-btn;
-    color: $colorBody;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
-    }
+}
+.modal-popup__btn {
+  width: 268px;
+  height: 61px;
+  background-color: $color-btn;
+  color: $colorBody;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
 
-    .personal__btn {
-      width: 268px;
-      height: 61px;
-      background-color: $color-btn;
-      margin-bottom: 45px;
-      color: $ColorFontWhite;
-      font-size: 18px;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 3px;
-    }
-
-
-
-
+.personal__btn {
+  width: 268px;
+  height: 61px;
+  background-color: $color-btn;
+  margin-bottom: 45px;
+  color: $ColorFontWhite;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
 .download__btn {
   margin-left: 20px;
 }
-
 .upload__btn--ok {
   margin-bottom: 20px;
   margin-top: 40px;
@@ -53,7 +48,8 @@
 .upload__btn--ok:active {
   background-color: #d22856;
   color: #e07e94;
-}.upload__btn--no {
+}
+.upload__btn--no {
   border: 3px solid #dddfe0;
   color: #dddfe0 ;
 }
@@ -73,60 +69,57 @@
 .download__btn:active {
   color: $colorFontRed;
   background-color: $colorBody;
-  }
-  .btn {
-    margin: auto;
-    width: 260px;
-    display: block;
-  }
-
-  .upload__buttons {
-    margin-top: 55px;
-  }
-  .upload__btn--ok {
-    margin-bottom: 25px;
-    width: 242px;
-    height: 47px;
-    }
-    .upload__btn--no {
-      width: 242px;
-      height: 47px;
-    }
-    .modal-popup__btn {
-      width: 288px;
-  }
-  .personal__btn {
-    margin: 0;
-    width: 288px;
-  }
 }
-
+.btn {
+  margin: auto;
+  width: 260px;
+  display: block;
+}
+.upload__buttons {
+  margin-top: 55px;
+}
+.upload__btn--ok {
+  margin-bottom: 25px;
+  width: 242px;
+  height: 47px;
+}
+.upload__btn--no {
+  width: 242px;
+  height: 47px;
+}
+.modal-popup__btn {
+  width: 288px;
+}
+.personal__btn {
+  margin: 0;
+  width: 288px;
+}
+}
 @media (min-width: $desktop-width) {
-  .download__btn {
-    width: 282px;
-    height: 47px;
-    font-size: 21px;
-  }
-  .upload__buttons {
-    margin: auto;
-    width: 410px;
+.download__btn {
+  width: 282px;
+  height: 47px;
+  font-size: 21px;
+}
+.upload__buttons {
+  margin: auto;
+  width: 410px;
   display: flex;
   padding-top: 55px;
-  }
-  .upload__btn--ok {
-width: 165px;
-height: 47px;
-margin: auto;
-  }
-  .upload__btn--no {
-    width: 165px;
-    height: 47px;
-  }
-  .modal-popup__btn {
-width: 288px;
-
+}
+.upload__btn--ok {
+  width: 165px;
+  height: 47px;
+  margin: auto;
+}
+.upload__btn--no {
+  width: 165px;
+  height: 47px;
+}
+.modal-popup__btn {
+  width: 288px;
 }
 .modal-popup__btn--success {
   width: 448px;
-}
+  }
 }
