@@ -1,0 +1,29 @@
+.copyright {
+  text-align: center;
+  display: flex;
+  padding-top: 35px;
+  margin-left: 100px;
+}
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  margin-left: 15px;
+  fill: #d22856;
+}
+.copyright__link:hover {
+  fill: #283645;
+}
+.copyright__link:active {
+  fill: #c6cace;
+}
+@media (min-width: $tablet-width) {
+.copyright {
+  margin: 0;
+  padding: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+.copyright {
+  font-size: 18px;
+  }
+}
